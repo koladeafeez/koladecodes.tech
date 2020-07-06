@@ -9,14 +9,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamshaunjp/node-crash-course.git"
+    "url": "git+https://github.com/koladeafeez/koladecodes.tech.git"
   },
-  "author": "net ninja",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/iamshaunjp/node-crash-course/issues"
-  },
-  "homepage": "https://github.com/iamshaunjp/node-crash-course#readme",
   "dependencies": {
     "animejs": "3.2.0",
     "ejs": "^3.1.2",
