@@ -1,21 +1,11 @@
+
 const express = require('express');
 const morgan = require('morgan');
-// const mongoose = require('mongoose');
-// const blogRoutes = require('./routes/blogRoutes');
-// const anime = require('animejs');
-// const animate = require('./public/main');
-
+const serverless = require('serverless-http');
 
 
 // express app
 const app = express();
-
-// connect to mongodb & listen for requests
-// const dbURI = "mongodb+srv://netninja:test1234@net-ninja-tuts-del96.mongodb.net/node-tuts";
-
-// mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-//   .then(result => app.listen(3000))
-//   .catch(err => console.log(err));
 
 // register view engine
 app.set('view engine', 'ejs');
@@ -29,20 +19,28 @@ app.use((req, res, next) => {
   next();
 });
 
+const router = express.Router();
+// app.use(`/.netlify/functions/app`, router);
+
+
 // routes
-app.get('/', (req, res) => {
+router.route('/')
+  .get((req, res) => {
   res.render('index');
 });
 
-app.get('/project', (req, res) => {
+router.route('/project')
+  .get((req, res) => {
   res.render('project')
 })
 
-app.get('/contact', (req, res) => {
+router.route('/contact')
+  .get((req, res) => {
   res.render('contact')
 })
 
-app.get('/tools', (req, res) => {
+router.route('/tools')
+.get((req, res) => {
   res.render('tools')
 })
 
@@ -50,14 +48,19 @@ app.get('/about', (req, res) => {
   res.render('about', { title: 'About' });
 });
 
-// blog routes
-// app.use('/blogs', blogRoutes);
 
-// 404 page
-app.use((req, res) => {
-  res.status(404).render('404', { title: '404' });
-});
+app.use('/', router);
+
+
+
+
 
 app.listen('3000', () => {
 console.log('listening at port')
 })
+
+
+
+
+// module.exports = app;
+// module.exports.handler = serverless(app);
