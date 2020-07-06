@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+
+
+.col-md-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 43.333333%;
+    max-width: 83.333333%;
+}
+
+.line{
+    background-color: #fff;
+    width: 3rem;
+    }
+    .line:first-child{
+     width: 1rem;
+     align-self: center;
+    }
+    .line:nth-child(2){
+        width: 2rem;
+        align-self: center;
+       }
+
+
+nav {
+    padding-top: 2rem;
+}
+
+.nav-link li a {
+    margin: 0;
+    padding: 0;
+}
+.logo img {
+    width: 5rem;
+}
+
+.para{
+    align-items: center;
+}
+
+.empty {
+ display: none;
+}
+
+.social {
+    display: inline-block;
+    width: 70%;
+}
+
+.h2 {
+    font-size: medium;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+.social-code {
+    display: inline-block;
+    width: auto;
+    color: rgb(118, 44, 15) !important;
+    font-size: 1.2rem !important;
+    font-family: "Montez", cursive;
+    padding-left: 0rem;
+}
+
+.push {
+    padding-left: 14rem;
+}
+
+h2 {
+    color: #fff;
+    padding-left: 6rem;
+    font-size: 3vw;
+}
+
+     .brand-area{
+    padding: 1rem 20rem;
+    margin-bottom: 4rem;
+}
+
+ .brand-area .first-row .col-lg-3{
+    display: flex;
+    justify-content: center;
+}
+
+ .brand-area .first-row .col-lg-3 > .single-brand{
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform .4s ease;
+    background-color: #E7C0E9
+}
+
+.brand-area .first-row .col-lg-3 > .single-brand > img{
+    width: 40%;
+}
+
+ .brand-area .first-row .col-lg-3 > .single-brand:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+
+ .brand-area .first-row .col-lg-3 > .single-brand:hover > img{
+    filter: brightness(-0.15);
+
+ }
+ .nav-links{
+    padding-top: 0 !important;
+}
+
+.github, .medium{
+    color: rgb(207, 193, 193) !important ;
+}
+.twitter, .linkedin{
+    color: rgb(182, 182, 226) !important ;
+}
+
+
+  .linkedin:hover,.twitter:hover{
+    color: blue !important;
+
+}
+.github:hover,.medium:hover{
+    color: black !important;
+
+}
+    @media screen and (max-width: 800px) {
+        .brand-area{
+            padding: 1rem 1rem;
+            margin-bottom: 1rem;
+        }
+        
+         .brand-area .first-row .col-md-6{
+            display: flex;
+            justify-content: center;
+            width: 50%
+        }
+        
+         .brand-area .first-row .col-md-3 > .single-brand{
+            border: 1px solid var(--border-color);
+            text-align: center;
+            padding: .2rem 0rem;
+            margin: .2rem 0;
+            width: 8rem;
+            height: 8rem;
+            cursor: pointer;
+            transition: transform .4s ease;
+        }
+        
+        .brand-area .first-row .col-md-3 > .single-brand > img{
+            width: 50%;
+        }
+        
+         .brand-area .first-row .col-md-3 > .single-brand:hover{
+            box-shadow: var(--box-shadow);
+            transform: scale(1.1);
+        }
+        
+         .brand-area .first-row .col-md-3 > .single-brand:hover > img{
+            filter: brightness(0.15);
+        
+         }
+    }
+
+    @media screen and (max-width: 400px) {
+        .push {
+            padding-left: 8rem;
+            font-size: 1rem;
+        }
+    }
+ 

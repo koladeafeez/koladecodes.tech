@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+<style>
+    body,html{
+        margin-top: 1rem;
+    }
+    .burger-full {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    margin-right: -35px;
+    margin-left: -1100px;
+}
+
+    .logo img {
+    padding-top: 0rem;
+    width: 7rem;
+}
+    .container {
+        margin-top: 2rem;
+    }
+
+    .empty {
+        display: none;
+    }
+    .logo img {
+    width: 5rem;
+}
+
+.hamburger {
+top: 0;
+}
+
+.nav-links{
+    padding-top: 0 !important;
+}
+
+.title-h1 {
+    color:#fff;
+    font-size: 2rem;
+
+}
+h4{
+    font-size: 1rem;
+    color:#E7C0E9;
+}
+    @media screen and (max-width: 991px){
+    
+
+        .nav-links li a {
+        font-size: 1rem;
+        margin-right: 0;
+        }
+
+        .project-area{
+            margin-top: 2rem;
+        } 
+        .pb-5, .py-5 {
+    padding-bottom: 3rem!important;
+}
+
+
+
+    }
+    @media screen and (max-width: 989px){
+        .pb-5, .py-5 {
+    padding-bottom: 1rem!important;
+}
+.title-h1 {
+    font: bold 1.2rem/ 3px var(--roboto);
+}
+    }
+
+    @media screen and (max-width: 763px){
+        .open {
+            margin-top: 13px !important;
+        }
+    }
+
+    @media screen and (max-width: 360px){
+        .title-h1 {
+    font-size: .8rem;
+} 
+    }
+</style>
+<body>
+    <!-- - include("./partials/nav.ejs") -->
+
+
+    <div class="loading-container">
+        <div class="loading-screen">
+        </div>
+      </div>
+  
+      <header>
+        <nav class="main-navigation ">
+          <ul class="nav-links">
+            
+            <li><a href="/">about</a></li>
+            <li><a href="/tools">tools</li>
+            <li><a href="/project">project</a></li>
+            <li><a href="/contact">contact</a></li>
+            
+
+          </ul>
+        </nav>
+      </header>
+   
+   <!--  ======================= Project Area =============================  -->
+   <div data-barba="wrapper">
+    <main data-barba="container" data-barba-namespace="project" >
+       <section class="project-area burger">
+        <div class="container">
+            <div class="project-title pb-5">
+                <h1 class="text-uppercase title-h1">Recently Done Project <img class="svg-icons" src="./icons/fire.svg"></h1>
+                <h1 class="text-uppercase title-h1">stuff i've work on <img class="svg-icons" src="./icons/folder.svg"></h1>
+            </div>
+
+            <!-- <div class="button-group"> -->
+                <!-- <button type="button" class="active" id="btn1" data-filter="*">All</button>
+                <button type="button" data-filter=".popular">Popular</button>
+                <button type="button" data-filter=".latest">Latest</button>
+                <button type="button" data-filter=".following">Following</button>
+                <button type="button" data-filter=".upcoming">Upcoming</button>
+            </div> -->
+
+            <div class="row grid">
+                <div class="col-lg-6 col-md-6 col-sm-12 element-item latest">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/covid.png">
+                                <img src="./img/covid.png" alt="portfolio-1" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Covid19 Impact Estimator</h4>
+                            <span class="text-secondary">Latest, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="col-lg-6 col-md-6 col-sm-12 element-item popular">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p2.jpg">
+                                <img src="./img/dashboard.png" alt="portfolio-2" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Awesome Dashboard</h4>
+                            <span class="text-secondary">Popular, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="col-lg-6 col-md-6 col-sm-12 element-item popular">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p3.jpg">
+                                <img src="./img/stayfit.png" alt="portfolio-3" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Stayfit</h4>
+                            <span class="text-secondary">Popular, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="col-lg-6 col-md-6 col-sm-12 element-item upcoming">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p4.jpg">
+                                <img src="./img/hurdle.png" alt="portfolio-4" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Hurdle Challenge</h4>
+                            <span class="text-secondary">Upcoming, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr/>
+                <div class="col-lg-6 col-md-6 col-sm-12 element-item upcoming">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p5.jpg">
+                                <img src="./img/movieflix.png" alt="portfolio-5" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">MuvieFlix</h4>
+                            <span class="text-secondary">Upcoming, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr/>
+                <div class="col-lg-6 col-md-6 col-sm-12 element-item following">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p6.jpg">
+                                <img src="./img/portfolio/p6.jpg" alt="portfolio-6" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Together sign</h4>
+                            <span class="text-secondary">Following, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="col-lg-6 col-md-6 col-sm-12 element-item following">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p7.jpg">
+                                <img src="./img/portfolio/p7.jpg" alt="portfolio-7" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Green Heaven</h4>
+                            <span class="text-secondary">Following, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="col-lg-6 col-md-6 col-sm-12 element-item following">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p8.jpg">
+                                <img src="./img/portfolio/p8.jpg" alt="portfolio-8" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Fly Male</h4>
+                            <span class="text-secondary">Following, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 element-item upcoming">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p9.jpg">
+                                <img src="./img/portfolio/p9.jpg" alt="portfolio-9" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Camera Lens</h4>
+                            <span class="text-secondary">Upcoming, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</div>
+    <!--  ======================= End Project Area =============================  -->
+    <%- include("./partials/footer.ejs") %>
