@@ -12,7 +12,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // middleware & static files
-app.use(express.static(__dirname + 'public'));
+app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan('dev'));
 app.use((req, res, next) => {
@@ -57,7 +57,7 @@ app.use('/', router);
 
 
 app.listen(port, () => {
-console.log('listening at port')
+console.log('listening at port', port)
 })
 
 
