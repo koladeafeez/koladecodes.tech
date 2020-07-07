@@ -27,8 +27,7 @@ const router = express.Router();
 // routes
 router.route('/')
   .get((req, res) => {
-    res.send('name is love')
-  // res.render('index');
+  res.render('index');
 });
 
 router.route('/project')
