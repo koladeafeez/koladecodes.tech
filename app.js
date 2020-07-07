@@ -12,7 +12,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // middleware & static files
-app.use(express.static('public'));
+app.use(express.static(__dirname + 'public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan('dev'));
 app.use((req, res, next) => {
@@ -28,8 +28,27 @@ const router = express.Router();
 router.route('/')
   .get((req, res) => {
     res.send('name is love')
+  // res.render('index');
 });
 
+router.route('/project')
+  .get((req, res) => {
+  res.render('project')
+})
+
+router.route('/contact')
+  .get((req, res) => {
+  res.render('contact')
+})
+
+router.route('/tools')
+.get((req, res) => {
+  res.render('tools')
+})
+
+app.get('/about', (req, res) => {
+  res.render('about', { title: 'About' });
+});
 
 
 app.use('/', router);
