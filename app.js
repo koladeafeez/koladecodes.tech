@@ -28,27 +28,8 @@ const router = express.Router();
 router.route('/')
   .get((req, res) => {
     res.send('name is love')
-  // res.render('index');
 });
 
-router.route('/project')
-  .get((req, res) => {
-  res.render('project')
-})
-
-router.route('/contact')
-  .get((req, res) => {
-  res.render('contact')
-})
-
-router.route('/tools')
-.get((req, res) => {
-  res.render('tools')
-})
-
-app.get('/about', (req, res) => {
-  res.render('about', { title: 'About' });
-});
 
 
 app.use('/', router);
