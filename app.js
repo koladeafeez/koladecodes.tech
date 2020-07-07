@@ -3,6 +3,7 @@ const express = require('express');
 const morgan = require('morgan');
 const serverless = require('serverless-http');
 
+const port = process.env.PORT || 3000;
 
 // express app
 const app = express();
@@ -55,7 +56,7 @@ app.use('/', router);
 
 
 
-app.listen('3000', () => {
+app.listen(port, () => {
 console.log('listening at port')
 })
 
