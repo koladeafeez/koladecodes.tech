@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 
 // express app
 const app = express();
-
+app.set('views', __dirname + '/views');
 // register view engine
 app.set('view engine', 'ejs');
 
