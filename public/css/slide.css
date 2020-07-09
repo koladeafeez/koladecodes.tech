@@ -11,7 +11,7 @@ body {
   /* Navigation Styling */
   
   header nav {
-    position: fixed;
+    position: relative;
     z-index: 9;
     text-align: right;
     width: 100%;

@@ -1,18 +1,37 @@
-/* =================
-
-author: Karan Mhatre
-email: me@karanmhatre.com
-website: karanmhatre.com
-
-================= */
-
 // Better to traverse the DOM thenleast possible
 // you can use `var` instead of `const` for legacy browser support
+$(document).ready(function () {
+const navlinks = document.querySelectorAll('.navbar-links li a');
 const loadingScreen = document.querySelector('.loading-screen')
 const mainNavigation = document.querySelector('.main-navigation')
 
+let newLocation;
+window.addEventListener('popstate', (event)=>{
+   newLocation = event.state.states;
+   console.log(newLocation);
+  historyLength = newLocation.length;
+  newLocationChange = event.state.states[historyLength-1].url;
+  let subSt = newLocationChange.substr(21,);
+
+ console.log(subSt);
+//  let conc = "/" + subSt
+//  console.log( "conc", conc, typeof(conc));
+ window.location.href =  subSt; 
+});
+
+  navlinks.forEach(nav => {
+    nav.addEventListener('click', ()=> {
+      setTimeout(()=>{
+        let d  = nav.getAttribute('href');
+        console.log(typeof(d));
+        window.location.href = d;
+      },700)
+     
+    })
+  })
 // Function to add and remove the page transition screen
 function pageTransitionIn() {
+
   // GSAP methods can be chained and return directly a promise
   // but here, a simple tween is enough
   return gsap
@@ -25,6 +44,7 @@ function pageTransitionIn() {
 function pageTransitionOut(container) {
   // GSAP methods can be chained and return directly a promise
   return gsap
+  
     .timeline({ delay: 1 }) // More readable to put it here
     .add('start') // Use a label to sync screen and content animation
     .to(loadingScreen, {
@@ -96,5 +116,5 @@ $(function() {
       }
     }]
   });
-
+})
 });

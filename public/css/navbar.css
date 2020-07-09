@@ -27,20 +27,21 @@
     /* border: 3px solid #fff; */
   }
   .menu-btn__burger {
-    width: 50px;
-    height: 6px;
+    width: 40px;
+    height: 4px;
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
     transition: all .5s ease-in-out;
+    margin: 0 0;
   }
   .menu-btn__burger::before,
   .menu-btn__burger::after {
    
     content: '';
     position: absolute;
-    width: 50px;
-    height: 6px;
+    width: 30px;
+    height: 4px;
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
@@ -64,3 +65,142 @@
   .menu-btn.open-nav .menu-btn__burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
   }
+
+
+  @media screen and (max-width:670px) {
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  } */
+  .menu-btn {
+    position: absolute;
+    top: -200px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    float: right;
+    padding-right: 4rem;
+    /* border: 3px solid #fff; */
+  }
+  .menu-btn__burger {
+    width: 35px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+    margin: 0 0;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+   
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-14px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(14px);
+  }
+  /* ANIMATION */
+  .menu-btn.open-nav .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .menu-btn.open-nav .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .menu-btn.open-nav .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+}
+
+  @media screen and (max-width:411px) {
+
+    /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #272727;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      } */
+      .menu-btn {
+        position: absolute;
+        top: -200px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        float: right;
+        padding-right: 4rem;
+        /* border: 3px solid #fff; */
+      }
+      .menu-btn__burger {
+        width: 35px;
+        height: 4px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .5s ease-in-out;
+        margin: 0 0;
+      }
+      .menu-btn__burger::before,
+      .menu-btn__burger::after {
+       
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 4px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .5s ease-in-out;
+      }
+      .menu-btn__burger::before {
+        transform: translateY(-13px);
+      }
+      .menu-btn__burger::after {
+        transform: translateY(13px);
+      }
+      /* ANIMATION */
+      .menu-btn.open-nav .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+      }
+      .menu-btn.open-nav .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+      }
+      .menu-btn.open-nav .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+      }
+    }

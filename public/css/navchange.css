@@ -78,10 +78,11 @@
  position: relative;
   top: 0;
   display: flex;
-  width: 30px;
-  height: 30px;
+  /* width: 30px;
+  height: 30px; */
   cursor: pointer;
   padding-right: .5rem;
+  z-index: 99;
 }
  .menu-small-btn {
   

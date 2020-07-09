@@ -1,21 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/default.css">
-    <link rel="stylesheet" href="./css/slide.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/hamburger.css">
+ <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Daily Tuition</title>
+<%- include("./partials/head.ejs") %>
 
-<link rel="stylesheet" href="./css/contact.css">
-<link rel="stylesheet" href="./css/navchange.css">
-<!-- <link rel="stylesheet" href="./css/style.css"> -->
+
 
 <style>
+  body{
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 6rem;
+    /* margin-top: 20rem; */
+    /* background-color: #FF4136; */
+    /* width: 300px; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .container {
+    margin: 2rem;
+} */
+
+/* .line{
+    background-color: #fff;
+    width: 3rem;
+    }
+    .line:first-child{
+     width: 1rem;
+     align-self: center;
+    }
+    .line:nth-child(2){
+        width: 2rem;
+        align-self: center;
+       } */
+
+.social-cont {
+margin: 0;
+text-align: right;
+}
+
+.info-cont{
+margin: 0;
+}
+
+.contact-icons{
+    width: 3rem;
+    height: 3rem;
+
+   }
+
+
+
+ .email{
+/* margin-top: 6rem; */
+vertical-align: middle;
+ }
+
+ .email img {
+     padding: 0;
+ }
+   .contact {
+    margin: auto; 
+    /* width: 20rem;
+    height: 25rem;   */
+    /* margin: 15px; */
+    /* width: 400px; */
+  /* height: 400px; */
+  /* position: absolute; */
+  /* left: 40%; */
+  /* top: 50%; */
+  /* transform: translate(-50%, -50%); */
+ margin-top: 4rem;
+
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    flex: 1;
+  }
+  
+
+  .info img {
+      /* display: inline-block; */
+      /* padding-left: 4rem; */
+  }
+
+  
+  .social a {
+      display: block;
+      padding-left: 10rem;
+  }
+
+  .social a > i{
+    font-size:4rem;
+    padding: 2rem;
+    color: #201f1f17;
+}
+
+.social a:hover > i{
+    color: #4458dc;
+}
+
+.empty {
+    display: none;
+}
+
+
+h2{
+    font-size: 1.9rem;
+}
+
+.nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+}
+
+    .contact {
+        margin: auto; 
+        /* width: 20rem;
+        height: 25rem;   */
+        margin-left: 15px;
+        /* width: 400px; */
+      /* height: 400px; */
+      position: absolute;
+      left: 40%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+     
+    
+      }
+
+    .social a {
+        display: inline;
+        padding-left: 0rem;
+    }
+  
+    .social a > i{
+    font-size: 5rem;
+    padding: 0rem; 
+    padding-bottom: 1rem;
+      color: #201f1f17;
+  }
+
+  .info h2 {
+    font-size: 2.9rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.social {
+   padding:0;
+   margin: 0;
+
+}
+.info{
+    padding: 0;
+    margin: 0;
+}
+
+.github, .medium{
+    color: rgb(207, 193, 193) !important ;
+}
+.twitter, .linkedin{
+    color: rgb(182, 182, 226) !important ;
+}
+
+
+  .linkedin:hover,.twitter:hover{
+    color: blue !important;
+
+}
+.github:hover,.medium:hover{
+    color: black !important;
+
+}
+
+.column2{
+  align-items: flex-start;
+}
+
+.column2 a > i{
+  display: block;
+  align-items: flex-start;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .info h2 {
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.info h2 {
+    font-size: 1rem;
+}
+.social a > i {
+    font-size: 3rem;
+    padding: 0rem;
+    padding-bottom: 1rem;
+    color: #201f1f17;
+}
+
+}
+
+
+ @media screen and (max-width: 460px) {
+    .social a > i{
+        font-size:2.5rem;
+        padding: 1rem;
+        color: #201f1f17;
+        padding-right: 0;
+    }
+    .info h2 {
+        font-size: 0.85rem;
+        padding-left:0 ;
+        padding-right: 0;
+    }
+  
+
+  }
   .logo img {
     margin-top: 1rem;
     margin-left: 1rem;
@@ -85,10 +324,11 @@
   </div>
 
   <header>
-    <nav class="main-navigation ">
+
         <div class="menu-btn">
             <div class="menu-btn__burger"></div>
           </div>
+          <nav class="main-navigation ">
       <ul class="navbar-links">
         
         <li><a class="appear" href="/">about</a></li>
@@ -102,9 +342,11 @@
   </header>
     <div data-barba="wrapper">
     <main data-barba="container" data-barba-namespace="contact" >
-    <div class='contact site-banner burger container'>
+    <div class='burger container'>
+      <!-- contact site-banner -->
         <div class='row'>
-          <div class='column info-cont'>
+          <div class='col-lg-8 col-md-8 '>
+            <!-- column info-cont -->
             <div class='info'>
                 
                     <img class="contact-icons" src="./icons/email.svg"/> 
@@ -116,7 +358,8 @@
                 </h2>
             </div>
           </div>
-          <div class='column social-cont'>
+          <div class=' column2 col-lg-4 col-md-4 '>
+            <!-- column social-cont  -->
             <div class='social'>
                 <a href="#"><i class="fab fa-github github"></i></a>
                 <a href="#"><i class="fab fa-linkedin linkedin"></i></a>
@@ -130,17 +373,7 @@
       </div>
 
     
-    <!-- JQuery -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <%- include("./partials/footer.ejs") %>
 
-<!-- Barba Core -->
-<script src="https://unpkg.com/@barba/core"></script>
-
-<!-- GSAP for animation -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-<script src="./js/burger.js"></script>
-    <script src="./js/animation.js"></script>
-    <script src="./js/helper.js"></script>
-    <script src="./js/navbar.js"></script>
 </body>
 </html>

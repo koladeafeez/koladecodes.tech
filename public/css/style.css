@@ -9,6 +9,8 @@
 /* import global styling */ 
 @import url(./partials/_global.css);
 
+
+
 html,body{
     background-color: black;
     max-height: 15rem;
@@ -162,9 +164,12 @@ color: #4E4B4B;
 .button.secondary-button {
    background-color: #E7C0E9;
    height: 3rem;
+   width: 8rem;
+   margin-right:1rem;
    border-radius: 2rem;
    border-color: #E7C0E9;
    overflow: hidden;
+   padding: 1rem 0;
 }
 .line{
 background-color: #fff;
@@ -428,6 +433,10 @@ width: 3rem;
 
 /* Footer Area */ 
 
+footer{
+    max-width: 100%;
+}
+
 footer.footer-area{
     padding: 0rem 0;
     background: url(../img/footer-bg.png) no-repeat;
@@ -460,8 +469,8 @@ footer.footer-area .social a > i{
 }
 
 .banner-image > img {
-    padding: 2rem 0;
-    width: 20rem;
+    padding: 0rem 0;
+    width: 25rem;
 }
 .two-column-img {
     width: 100%;
@@ -544,39 +553,42 @@ footer.footer-area .social a > i{
         padding-left: 20px;
     }
     .site-banner .site-title h3{
-        font-size: .7rem;
+        font-size: .9rem;
         margin:0;
-        line-height: 1rem;
+        line-height: .6rem;
     }
     .site-banner .site-title h2{
-        font-size: .9rem;
+        font-size: 2rem;
         margin: 0;
         padding:0;
-        line-height: 1rem;
+        line-height: 2rem;
     }
     .site-banner .site-title h4{
-        font-size: .6rem;
+        font-size: .9rem;
         margin: 0 !important;
+        margin-top: 0;
+        line-height: 1.5rem;
     }
 
     p {
-        font-size: .8rem;
+        font-size: 1rem;
+        line-height: 1.2;
     }
     .site-banner .banner-image > img{
-        padding: 2rem 0;
-        width: 30rem;
+        padding: 0rem 0;
+        width: 100%;
         height: 20rem;
         padding-bottom: 0;
     }
 
     footer.footer-area .social a > i{
-        font-size:2rem;
+        font-size:4rem;
         padding: 2rem;
         color: var(--border-color);
     }
     .button.secondary-button {
-        width: 8rem;
-        padding: 3px 0;
+        width: 6rem;
+        padding: 1rem 0;
         font-size: .6rem;
         font-family:cursive;
     }
@@ -601,11 +613,34 @@ footer.footer-area .social a > i{
     }
     .button.secondary-button {
         width: 6rem;
-        padding: 2px 0;
-        font-size: .6rem;
+        padding: .2rem 0;
+        font-size: .9rem;
         font-family:cursive;
+        margin-top: 2rem;
+        margin-right: 1.5rem; 
     }
 
+}
+
+@media screen and (max-width: 611px) {
+    .button.secondary-button {
+        width: 6rem;
+        padding: 0rem 0;
+        font-size: .9rem;
+        font-family:cursive;
+        margin-top: 2rem;
+        margin-right: 1rem; 
+    } 
+    footer.footer-area .social a > i{
+        font-size:3rem;
+        padding: 2rem;
+        color: var(--border-color);
+    }
+    .svg-icons {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 448px) {
@@ -630,7 +665,7 @@ footer.footer-area .social a > i{
         padding-top: 3rem;
     }
     .site-banner .site-title h3 {
-        font-size: .7rem;
+        font-size: .9rem;
         letter-spacing: 1px;
         margin: 0rem;
         margin-top: 0rem;
@@ -643,7 +678,7 @@ footer.footer-area .social a > i{
         line-height: 2rem;
     }
     .site-banner .site-title h4 {
-        font-size: .9rem;
+        font-size: 1rem;
         line-height: .2rem;
         font-weight: 9rem;
     }
@@ -658,7 +693,7 @@ footer.footer-area .social a > i{
         width: 3rem;
     }
     p{
-        font-size: small;
+        font-size: .9rem;
     }
     .line {
         width: 25px;
@@ -668,18 +703,18 @@ footer.footer-area .social a > i{
     }
     .button.secondary-button {
         width: 4rem;
-        padding: 2px 0;
-        margin-right: 2rem;
+        padding-top: .0srem;
+        margin-right: 1rem;
         font-size: .8rem;
         font-family: cursive;
     }
     .site-banner .banner-image > img{
         padding: 2rem 0;
-        width: 20rem;
+        width: 25rem;
     }
 
     footer.footer-area .social a > i{
-        font-size:2rem;
+        font-size:2.5rem;
         padding: 1rem;
         color: var(--border-color);
         margin-top: 0;

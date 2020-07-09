@@ -1,41 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Daily Tuition</title>
-
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/default.css">
-    <link rel="stylesheet" href="./css/slide.css">
-    <link rel="stylesheet" href="./css/hamburger.css">
-    <!--  Bootstrap css file  -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-
-    <!--  font awesome icons  -->
-    <link rel="stylesheet" href="./css/all.min.css">
+ <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> Kolade(About)-- Portfolio</title>
 
 
-    <!--  Magnific Popup css file  -->
-    <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
-
-
-    <!--  Owl-carousel css file  -->
-    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
-
-
-    <!--  custom css file  -->
-    <link rel="stylesheet" href="./css/style.css">
-
-    <!--  Responsive css file  -->
-    <link rel="stylesheet" href="./css/responsive.css">
-  
-  <link rel="stylesheet" href="./css/skill.css"> 
-  <link rel="stylesheet" href="./css/navchange.css">
+        <%- include("./partials/head.ejs") %>  
   <style>
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+
+.col-md-6 {
+    padding-left: 0px;
+}
+
+footer {
+    max-width: 100%;
+    margin: auto;
+    /* border-top: 1px dashed #28ca9f; */
+    margin-top: 0rem;
+}
+
+.col-md-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 43.333333%;
+    max-width: 83.333333%;
+}
+
+.line{
+    background-color: #fff;
+    width: 3rem;
+    }
+    .line:first-child{
+     width: 1rem;
+     align-self: center;
+    }
+    .line:nth-child(2){
+        width: 2rem;
+        align-self: center;
+       }
+
+
+nav {
+    padding-top: 2rem;
+}
+
+.nav-link li a {
+    margin: 0;
+    padding: 0;
+}
+.logo img {
+    width: 5rem;
+}
+
+.para{
+    align-items: center;
+}
+
+.empty {
+ display: none;
+}
+
+.social {
+    display: inline-block;
+    width: 100%;
+}
+
+.h2 {
+    font-size: medium;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+.social-code {
+    display: inline-block;
+    width: auto;
+    color: rgb(118, 44, 15) !important;
+    font-size: 1.2rem !important;
+    font-family: "Montez", cursive;
+    padding-left: 0rem;
+    padding: 0;
+    margin: 0;
+
+}
+
+h2 {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: .5rem;
+    margin-top: 0
+}
+
+     .brand-area{
+    padding: 1rem 20rem;
+    margin-bottom: 4rem;
+}
+
+ .brand-area .first-row .col-lg-3{
+    display: flex;
+    justify-content: center;
+}
+
+ .brand-area .first-row .col-lg-3 > .single-brand{
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 3.8rem 0rem;
+    margin: .9rem 0;
+    width: 13rem;
+    height: 11rem;
+    cursor: pointer;
+    transition: transform .4s ease;
+    background-color: #E7C0E9
+}
+
+.brand-area .first-row .col-lg-3 > .single-brand > img{
+    width: 40%;
+}
+
+ .brand-area .first-row .col-lg-3 > .single-brand:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+
+ .brand-area .first-row .col-lg-3 > .single-brand:hover > img{
+    filter: brightness(-0.15);
+
+ }
+ .nav-links{
+    padding-top: 0 !important;
+}
+
+.github, .medium{
+    color: rgb(207, 193, 193) !important ;
+}
+.twitter, .linkedin{
+    color: rgb(182, 182, 226) !important ;
+}
+
+
+  .linkedin:hover,.twitter:hover{
+    color: blue !important;
+
+}
+.github:hover,.medium:hover{
+    color: black !important;
+
+}
+
+@media screen and (max-width: 1110px) {
+.brand-area .first-row .col-lg-3 > .single-brand{
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 3.8rem 0rem;
+    margin: .9rem 0;
+    width: 13rem;
+    height: 11rem;
+    cursor: pointer;
+    transition: transform .4s ease;
+    background-color: #E7C0E9
+}
+.brand-area {
+    padding: 1rem 10rem;
+    margin-bottom: 4rem;
+}
+}
+
+
+
+    @media screen and (max-width: 800px) {
+        .brand-area{
+            padding: 1rem 1rem;
+            margin-bottom: 1rem;
+        }
+        
+         .brand-area .first-row .col-md-6{
+            display: flex;
+            justify-content: center;
+            width: 50%
+        }
+        
+         .brand-area .first-row .col-md-3 > .single-brand{
+            border: 1px solid var(--border-color);
+            text-align: center;
+            padding: .2rem 0rem;
+            margin: .2rem 0;
+            width: 8rem;
+            height: 8rem;
+            cursor: pointer;
+            transition: transform .4s ease;
+        }
+        
+        .brand-area .first-row .col-md-3 > .single-brand > img{
+            width: 50%;
+        }
+        
+         .brand-area .first-row .col-md-3 > .single-brand:hover{
+            box-shadow: var(--box-shadow);
+            transform: scale(1.1);
+        }
+        
+         .brand-area .first-row .col-md-3 > .single-brand:hover > img{
+            filter: brightness(0.15);
+        
+         }
+    }
+
+    @media screen and (max-width: 400px) {
+        .push {
+            padding-left: 2rem;
+            font-size: 1rem;
+        }
+    }
+ 
+    @media screen and (max-width: 400px) {
+    .brand-area {
+    padding: 1.2rem 1rem;
+    margin-bottom: 0rem;
+}
+
+h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    padding-left: .5rem;
+    margin-top: 0;
+}
+.brand-area .first-row .col-lg-3 > .single-brand{
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0;
+    width: 13rem;
+    height: 7rem;
+    cursor: pointer;
+    transition: transform .4s ease;
+    background-color: #E7C0E9
+}
+
+
+}
+
    .burger-full {
     display: -ms-flexbox;
     display: flex;
@@ -60,10 +266,11 @@
       </div>
   
       <header>
-        <nav class="main-navigation ">
+
             <div class="menu-btn">
                 <div class="menu-btn__burger"></div>
               </div>
+              <nav class="main-navigation ">
           <ul class="navbar-links">
             
             <li><a class="appear" href="/">about</a></li>
@@ -78,7 +285,8 @@
       
       <div data-barba="wrapper" class="burger wrapper">
      <main data-barba="container" data-barba-namespace="tools" >
-      <code class="social-code h2 push">&lt;h2 class="bold"&gt;</code ><h2> Some Of The tools i use</h2><code class="social-code push">&lt;/h2&gt;</code>
+      <code class="social-code h2 push">&lt;h2 class="bold"&gt;</code ><code class="social-code push">&lt;/h2&gt;</code>
+        <h2> Some Of The tools I Use</h2>
       <section class="brand-area ">
                     <div class="first-row row">
                         <div class="col-lg-3 col-md-6 col-sm-6">
@@ -144,65 +352,25 @@
 
     <!--  ====================== End Services Area =============================  -->
   
-    <footer class="footer-area ">
-        <div class="container  ">
-            <div class="row">
-                <code class="social-code col-lg-2 no-push">&lt;div class="social"&gt;</code>
-                <div class="social text-center col-lg-8">
-                    <a href="#"><i class="fab fa-github github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin linkedin"></i></a>
-                    <a href="#"><i class="fab fa-medium medium"></i></a>
-                    <a href="#"><i class="fab fa-twitter twitter"></i></a>
-                </div>
-                <code class="social-code col-lg-2 no-push">&lt;/div&gt;</code>
-                
-            </div>
-        </div>
-        <div class="copyrights text-center">
-            <p class="para">
-                Made with Love 
-            </p>
-        </div>
-    </footer>
+    
+                <code class="social-code col-lg-2 no-push">&lt;div class&gt;</code><code class="social-code col-lg-2 no-push">&lt;/div&gt;</code>
+                <footer class="footer-area">
+                    <div class="social text-center">
+                        <a href="#"><i class="fab fa-github github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin linkedin"></i></a>
+                        <a href="#"><i class="fab fa-medium medium"></i></a>
+                        <a href="#"><i class="fab fa-twitter twitter"></i></a>
+                    </div>
+                    <div class="copyrights text-center">
+                        <p class="para">
+                            Made with Love 
+                        </p>
+                    </div>
+                </footer>
+
+
+<%- include("./partials/footer.ejs") %>
 </main> 
-  
-
-
-    <!--  Jquery js file  -->
-    <script src="./js/jquery.3.4.1.js"></script>
-
-    <!--  Bootstrap js file  -->
-    <script src="./js/bootstrap.min.js"></script>
-
-    <!--  isotope js library  -->
-    <script src="./vendor/isotope/isotope.min.js"></script>
-
-    <!--  Magnific popup script file  -->
-    <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
-
-    <!--  Owl-carousel js file  -->
-    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
-
-    <!--  custom js file  -->
-    <!-- <script src="main.js"></script> -->
-
-<!-- JQuery -->
-
-<!-- Barba Core -->
-
-<!-- GSAP for animation -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-<script src="https://unpkg.com/@barba/core"></script>
-
-<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
-<script src="./js/burger.js"></script>
-<script src="./js/animation.js"></script>
-<script src="./js/helper.js"></script>
-<script src="./js/navbar.js"></script>
-
-
-
-
 </body>
 
 </html>
