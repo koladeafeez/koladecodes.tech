@@ -14,6 +14,12 @@
     width: 100%;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+
+
 .container {
     width: 100%;
     padding-right: 15px;
@@ -21,31 +27,11 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 6rem;
-    /* margin-top: 20rem; */
-    /* background-color: #FF4136; */
-    /* width: 300px; */
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
-/* .container {
-    margin: 2rem;
-} */
-
-/* .line{
-    background-color: #fff;
-    width: 3rem;
-    }
-    .line:first-child{
-     width: 1rem;
-     align-self: center;
-    }
-    .line:nth-child(2){
-        width: 2rem;
-        align-self: center;
-       } */
 
 .social-cont {
 margin: 0;
@@ -65,7 +51,7 @@ margin: 0;
 
 
  .email{
-/* margin-top: 6rem; */
+
 vertical-align: middle;
  }
 
@@ -74,19 +60,10 @@ vertical-align: middle;
  }
    .contact {
     margin: auto; 
-    /* width: 20rem;
-    height: 25rem;   */
-    /* margin: 15px; */
-    /* width: 400px; */
-  /* height: 400px; */
-  /* position: absolute; */
-  /* left: 40%; */
-  /* top: 50%; */
-  /* transform: translate(-50%, -50%); */
  margin-top: 4rem;
 
   }
-  .row {
+  .row-cont {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -101,11 +78,6 @@ vertical-align: middle;
   }
   
 
-  .info img {
-      /* display: inline-block; */
-      /* padding-left: 4rem; */
-  }
-
   
   .social a {
       display: block;
@@ -115,12 +87,8 @@ vertical-align: middle;
   .social a > i{
     font-size:4rem;
     padding: 2rem;
-    color: #201f1f17;
 }
 
-.social a:hover > i{
-    color: #4458dc;
-}
 
 .empty {
     display: none;
@@ -139,11 +107,8 @@ h2{
 
     .contact {
         margin: auto; 
-        /* width: 20rem;
-        height: 25rem;   */
+
         margin-left: 15px;
-        /* width: 400px; */
-      /* height: 400px; */
       position: absolute;
       left: 40%;
       top: 50%;
@@ -179,22 +144,19 @@ h2{
     margin: 0;
 }
 
-.github, .medium{
-    color: rgb(207, 193, 193) !important ;
-}
-.twitter, .linkedin{
-    color: rgb(182, 182, 226) !important ;
-}
+
 
 
   .linkedin:hover,.twitter:hover{
-    color: blue !important;
+    padding-bottom: 2rem;
 
 }
 .github:hover,.medium:hover{
-    color: black !important;
+    padding-bottom: 2rem;
 
-}
+} 
+
+
 
 .column2{
   align-items: flex-start;
@@ -205,6 +167,14 @@ h2{
   align-items: flex-start;
 }
 
+.social a > i {
+    
+    padding-bottom: 2rem;
+
+}
+
+
+
 
 @media screen and (max-width: 1000px) {
   .info h2 {
@@ -212,6 +182,40 @@ h2{
   }
 
 }
+
+@media screen and (max-width: 995px) {
+.nav {
+    text-align: right;
+    padding-left: 32rem;
+    float: right;
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1.2rem;
+    font-size: medium;
+}
+
+}
+
+@media screen and (max-width: 820px) {
+.nav {
+    text-align: right;
+    padding-left: 22rem;
+    float: right;
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1.2rem;
+    font-size: medium;
+}
+
+}
+
+
 
 @media screen and (max-width: 600px) {
   .container {
@@ -228,7 +232,7 @@ h2{
 }
 
 .info h2 {
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 .social a > i {
     font-size: 3rem;
@@ -248,7 +252,7 @@ h2{
         padding-right: 0;
     }
     .info h2 {
-        font-size: 0.85rem;
+        font-size: 1.3rem;
         padding-left:0 ;
         padding-right: 0;
     }
@@ -315,6 +319,34 @@ h2{
 
 }
 
+
+@media screen and (max-width: 389px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.change-bg{
+    transform: translate(60px, 0px); 
+  
+  }
+
+}
+
+
+.nav{
+  text-align: right;
+  padding-left: 7rem;
+}
+
+
+ 
+  .menu-bg, #menu-bar{
+    top: 0;
+    right: 1rem;
+    position: absolute;
+  }
+
 </style>
 </head>
 <body>
@@ -324,38 +356,46 @@ h2{
   </div>
 
   <header>
+    <div class="row">
+        <div class="col-lg-6">
 
-        <div class="menu-btn">
-            <div class="menu-btn__burger"></div>
-          </div>
-          <nav class="main-navigation ">
-      <ul class="navbar-links">
-        
-        <li><a class="appear" href="/">about</a></li>
-        <li><a class="appear" href="/tools">tools</li>
-        <li><a class="appear" href="/project">project</a></li>
-        <li><a class="appear" href="/contact">contact</a></li>
-        
+        </div>
+  <div id="menu-bar">
+      <div id="menu" onclick="onClickMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+      </div>
+      <!-- <nav class=""> -->
+      <ul class="nav" id="nav">
+          <li><a class="appear" href="/">Home</a></li>
+          <li><a  class="appear"  href="/About">About</a></li>
+          <li><a  class="appear"  href="/Tools">Tools</a></li>
+          <li><a  class="appear"  href="/Projects">Projects</a></li>
+          <li><a  class="appear"  href="/Contact">Contact</a></li>
+      </ul>
+  </div>
+    </div>
+  <div class="menu-bg" id="menu-bg"></div>
+<!-- </nav> -->
+</header>
 
-        </ul>
-    </nav>
-  </header>
-    <div data-barba="wrapper">
+    <div class="stop" data-barba="wrapper">
     <main data-barba="container" data-barba-namespace="contact" >
     <div class='burger container'>
       <!-- contact site-banner -->
-        <div class='row'>
+        <div class='row row-cont'>
           <div class='col-lg-8 col-md-8 '>
             <!-- column info-cont -->
             <div class='info'>
                 
                     <img class="contact-icons" src="./icons/email.svg"/> 
-                    <h2 class="email">koladeafeez60@gmail.com
-                </h2>
+                   <a> <h2 class="email">koladeafeez60@gmail.com
+                </h2></a>
                 
                     <img class="contact-icons" src="./icons/phone.svg">
-                    <h2 class="phone"> (+234)9040208966
-                </h2>
+                    <a href="tel:+2349040208966"> <h2 class="phone"> (+234)9040208966
+                </h2></a>
             </div>
           </div>
           <div class=' column2 col-lg-4 col-md-4 '>

@@ -9,9 +9,68 @@
 <%- include("./partials/head.ejs") %>
 <style>
 
+header .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
 body,html{
     height: 100%;
 }
+
+/* html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+} */
+
+p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+.foot{
+    margin-bottom: 3rem;
+}
+
+
+.nav{
+  text-align: right;
+  padding-left: 7rem;
+}
+
+
+ 
+  .menu-bg, #menu-bar{
+    top: 0;
+    right: 1rem;
+    position: absolute;
+  }
+
+  .two-column-img {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 3rem;
+}
+
+
+@media screen and (max-width: 991px) {
+.two-column-img {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0rem;
+}
+
+}
+@media screen and (max-width: 569px) {
+    .foot{
+    margin-bottom: 0rem;
+}
+}
+
+
 
 </style>
 
@@ -22,23 +81,31 @@ body,html{
       </div>
   
       <header>
+          <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6">
 
-            <div class="menu-btn">
-                <div class="menu-btn__burger"></div>
               </div>
-              <nav class="main-navigation ">
-          <ul class="navbar-links">
-            
-            <li><a class="appear" href="/">about</a></li>
-            <li><a class="appear" href="/tools">tools</li>
-            <li><a class="appear" href="/project">project</a></li>
-            <li><a class="appear" href="/contact">contact</a></li>
-            
-
-            </ul>
-        </nav>
+        <div id="menu-bar">
+			<div id="menu" onclick="onClickMenu()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+            </div>
+            <!-- <nav class=""> -->
+			<ul class="nav" id="nav">
+				<li><a class="appear" href="/">Home</a></li>
+				<li><a  class="appear"  href="/About">About</a></li>
+				<li><a  class="appear"  href="/Tools">Tools</a></li>
+				<li><a  class="appear"  href="/Projects">Projects</a></li>
+				<li><a  class="appear"  href="/Contact">Contact</a></li>
+			</ul>
+        </div>
+          </div>
+        <div class="menu-bg" id="menu-bg"></div>
+    <!-- </nav> -->
       </header>
-      <div data-barba="wrapper">
+
+      <div class="cover foot" data-barba="wrapper">
       <main data-barba="container" data-barba-namespace="home" >
         <section class="site-banner container-fluid burger" >
                 <div class="row ">

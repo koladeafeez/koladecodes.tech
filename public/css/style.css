@@ -131,8 +131,12 @@ font-family: "Fondamento", "Pacifico";
     width: 90rem;
 }
 
-.site-banner {
-    margin-left: 6rem;
+/* .site-banner {
+    margin-left: 1rem;
+} */
+
+.two-column{
+    padding-left: 6rem;
 }
 
 p {
@@ -440,7 +444,11 @@ footer{
 footer.footer-area{
     padding: 0rem 0;
     background: url(../img/footer-bg.png) no-repeat;
+
+    
 }
+
+
 
 footer.footer-area .social h5{
     font: normal 500 23px/ 30px var(--roboto);
@@ -449,7 +457,7 @@ footer.footer-area .social h5{
 footer.footer-area .social a > i{
     font-size:4rem;
     padding: 2rem;
-    color: var(--border-color);
+    /* color: var(--border-color); */
 }
   .github, .medium{
     color: rgb(207, 193, 193) !important ;
@@ -606,7 +614,18 @@ footer.footer-area .social a > i{
     }
 
 }
-@media screen and (max-width: 669px) {
+@media screen and (max-width: 669px) { 
+    /* .main-navigation {
+        position: fixed;
+        right: 0;
+    } */
+    /*
+    .copyrights{
+        position: fixed;
+        bottom: 0;
+        left: 40vw;
+    } */
+
     .col-md-6{
         padding-left: 50px;
 
@@ -641,6 +660,10 @@ footer.footer-area .social a > i{
         height: 1.5rem;
         display: inline-block;
     }
+}
+
+@media screen and (max-width: 575px) {
+ 
 }
 
 @media screen and (max-width: 448px) {

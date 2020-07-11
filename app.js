@@ -30,22 +30,22 @@ router.route('/')
   res.render('Index');
 });
 
-router.route('/project')
+router.route('/Projects')
   .get((req, res) => {
   res.render('project')
 })
 
-router.route('/contact')
+router.route('/Contact')
   .get((req, res) => {
   res.render('contact')
 })
 
-router.route('/tools')
+router.route('/Tools')
 .get((req, res) => {
   res.render('tools')
 })
 
-app.get('/about', (req, res) => {
+app.get('/About', (req, res) => {
   res.render('about', { title: 'About' });
 });
 

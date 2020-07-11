@@ -1,30 +1,13 @@
-const navlinks = document.querySelectorAll('.navbar-links li a');
-const burger = document.querySelector('.menu-btn');
-const navigatelinks = document.querySelector('.navbar-links');
-const menuBurger = document.querySelector('.menu-btn__burger');
-const menuBtn = document.querySelector('.menu-btn'); 
-const linkAppear = document.querySelectorAll('.navbar-links a');
+
+const Appear = document.querySelectorAll('.appear');
+const cover = document.querySelector('.cover');
+const activelink = document.querySelectorAll('.nav li a');
 let menuOpen = false;
 
-burger.addEventListener('click', ()=> {
-  if(!menuOpen) {
-    menuBtn.classList.add('open-nav');
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove('open-nav');
-    menuOpen = false;
-  }
-  console.log('click')
-  navigatelinks.classList.toggle('links');
-  menuBurger.classList.toggle('menu-btn-small');
-  menuBtn.classList.toggle('menu-small-btn')
 
-  linkAppear.forEach(link => {
-   link.classList.toggle('appear');
-  })  
-})
 
-navlinks.forEach(nav => {
+
+activelink.forEach(nav => {
   nav.addEventListener('click', ()=> {
     setTimeout(()=>{
       let d  = nav.getAttribute('href');
@@ -36,30 +19,36 @@ navlinks.forEach(nav => {
 
 
 
+  console.log(window.location.href);
+  console.log(activelink[0].href)
 
+  activelink.forEach((link, i) => {
+    console.log(link, i)
+ if (window.location.href == activelink[i].href ) {
+                link.classList.add('currentLink');
+            }
+            else {
+                link.classList.remove('currentLink');
 
-
-// console.log('hamburger')
-// const hamburger = document.querySelector(".hamburger");
-// const navLinks = document.querySelector("nav .nav-links");
-// const links = document.querySelectorAll("nav .nav-links li");
-// const content = document.querySelector('.burger');
-// const row = document.querySelector('.row');
-// const rowss = document.querySelector('.rowss');
-// console.log(row)
-
-// burger.addEventListener("click", () => {
-//   .classList.toggle('empty');
-//     navLinks.classList.toggle("open");
-//     row.classList.toggle("burger-full")
-//     if(rowss){
-//     rowss.classList.toggle("rowss")
-//     }
+            }
+  })
+           
   
-//   links.forEach(link => {
-//       // link.classList.toggle("fade");
-//   });
-// });
 
 
+function onClickMenu(){
+if(document.querySelector('.footer-area')){
+  document.querySelector('.footer-area').classList.toggle('footer-lost');
+  document.querySelector('.cover').classList.toggle("static");
 
+}
+
+if(document.querySelector('.stop')){
+  document.querySelector('.stop').classList.toggle("stop-scroll");
+}
+ 
+	document.getElementById("menu").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+	console.log(document.getElementById("menu-bg"));
+	document.getElementById("menu-bg").classList.toggle("change-bg");
+};
