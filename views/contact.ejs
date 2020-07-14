@@ -347,6 +347,180 @@ h2{
     position: absolute;
   }
 
+  @media screen and (max-width:670px) {
+
+.nav li a {
+  margin-right: 6rem;
+  font-size: xx-large;
+}
+
+.on-nav {
+  margin-top: 6rem;
+  display: block;
+  z-index: 20;
+  position: absolute;
+  top: 1rem;
+  padding-left: 4rem;
+  font-size: 2.5rem;
+}
+
+.on-nav h1 {
+   color: black;
+   position: absolute;
+   font-size: 3rem;
+   /* bottom: 3rem; */
+   
+}
+
+.on-nav ul{
+  padding-top: 9rem;
+}
+
+.on-nav ul li {
+  list-style: none;
+}
+
+.on-nav ul li a .fab {
+  width: 6rem;
+  height: 6rem;
+  font-size: 5rem;
+}
+
+#menu{
+  width: 40px;
+  height: 40px;
+  margin: 2rem 0 1.4rem auto;
+  cursor: pointer;
+  padding-top: 7px;
+  padding-left: 7px;
+  border: 2px solid #3C153B;
+}
+.bar{
+  height: .4rem;
+  width: 80%;
+  background-color: #f1064c;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+#bar1{
+  transform: translateY(-4px);
+}
+#bar3{
+  transform: translateY(4px);
+}
+.nav li a{
+  color: #fff;
+  text-decoration: none;
+}
+.nav li a:hover{
+  font-weight: bold;
+}
+.nav li{
+  list-style: none;
+  padding: 16px 0;
+}
+.nav{
+  padding: 0;
+  margin: 0 20px;
+  transition: 0.3s ease;
+  display: none;
+}
+.menu-bg, #menu-bar{
+  top: 0;
+  right: 1rem;
+  position: absolute;
+}
+ .menu-bg{
+  background: #EFA9AE;
+  z-index: 1;
+  border-top-left-radius: 50%; 
+  border-bottom-left-radius: 50%;
+  transition: 1s ease;
+ 
+
+}
+#menu-bar{
+  z-index: 2;	
+}
+ .change-bg{
+   margin-left: 400px;
+   width: 1200px;
+   height: 130%;
+   overflow: hidden;
+ }
+ 
+.change .bar{
+  background-color: #f1064c;
+}
+.change #bar1{
+  transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+  transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+  opacity: 0;
+}
+.change{
+  display: block;
+}
+}
+
+
+
+
+
+
+
+@media screen and (max-width:490px) {
+
+
+.nav li a {
+margin-right: 2rem;
+font-size: larger;
+}
+
+.on-nav {
+margin-top: 2rem;
+display: block;
+z-index: 20;
+position: absolute;
+top: .5rem;
+padding-left: 2rem;
+font-size: 1.5rem;
+}
+
+.on-nav h1 {
+ color: black;
+ position: absolute;
+ /* bottom: 3rem; */
+ 
+}
+
+.on-nav ul{
+padding-top: 6rem;
+}
+
+.on-nav ul li {
+list-style: none;
+}
+
+.on-nav ul li a .fab {
+width: 4rem;
+height: 4rem;
+font-size: 3rem;
+}
+}
+
+@media screen and (max-width:350px) {
+
+
+.nav li a {
+ margin-right: 1rem;
+ font-size: larger;
+}}
+
 </style>
 </head>
 <body>
@@ -376,15 +550,25 @@ h2{
       </ul>
   </div>
     </div>
+    <div class="burger-nav ">
+      <h1>Resume</h1>
+    <ul>
+     
+     <li> <a href="#"><i class="fab fa-github github"></i></a></li>
+ <li> <a href="#"><i class="fab fa-linkedin linkedin"></i></a></li>
+  <li><a href="#"><i class="fab fa-medium medium"></i></a></li>
+ <li> <a href="#"><i class="fab fa-twitter twitter"></i></a></li>
+  </ul>
+    </div>
   <div class="menu-bg" id="menu-bg"></div>
 <!-- </nav> -->
 </header>
 
-    <div class="stop" data-barba="wrapper">
+    <div class="stop " data-barba="wrapper">
     <main data-barba="container" data-barba-namespace="contact" >
     <div class='burger container'>
       <!-- contact site-banner -->
-        <div class='row row-cont'>
+        <div class='row row-cont animate'>
           <div class='col-lg-8 col-md-8 '>
             <!-- column info-cont -->
             <div class='info'>

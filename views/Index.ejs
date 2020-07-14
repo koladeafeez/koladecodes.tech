@@ -7,6 +7,7 @@
         <title>Daily Tuition</title>
 
 <%- include("./partials/head.ejs") %>
+
 <style>
 
 header .row {
@@ -27,9 +28,9 @@ body,html{
     overflow-x: hidden;
 } */
 
-p {
+.two-column p {
     margin-top: 0;
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
 }
 .foot{
     margin-bottom: 3rem;
@@ -73,23 +74,28 @@ p {
 
 
 </style>
-
+ </head>
 <body>
+
+
+
     <div class="loading-container">
         <div class="loading-screen">
         </div>
       </div>
   
-      <header>
+      <header class="container-fluid">
           <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-6">
-
+              <div class="col-lg-6 col-md-6 col-sm-6 logo-div">
+                    <img class="logo" src="./img/svg-logo.svg" alt="logo">
               </div>
         <div id="menu-bar">
-			<div id="menu" onclick="onClickMenu()">
+            <div id="menu" onclick="onClickMenu()">
+               
 				<div id="bar1" class="bar"></div>
 				<div id="bar2" class="bar"></div>
-				<div id="bar3" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+                
             </div>
             <!-- <nav class=""> -->
 			<ul class="nav" id="nav">
@@ -101,23 +107,35 @@ p {
 			</ul>
         </div>
           </div>
-        <div class="menu-bg" id="menu-bg"></div>
+          <div class="burger-nav ">
+            <h1>Resume</h1>
+          <ul>
+           
+           <li> <a href="#"><i class="fab fa-github github"></i></a></li>
+       <li> <a href="#"><i class="fab fa-linkedin linkedin"></i></a></li>
+        <li><a href="#"><i class="fab fa-medium medium"></i></a></li>
+       <li> <a href="#"><i class="fab fa-twitter twitter"></i></a></li>
+        </ul>
+          </div>
+        <div class="menu-bg" id="menu-bg">
+            
+        </div>
     <!-- </nav> -->
       </header>
 
-      <div class="cover foot" data-barba="wrapper">
+      <div class="cover foot animate" data-barba="wrapper">
       <main data-barba="container" data-barba-namespace="home" >
         <section class="site-banner container-fluid burger" >
                 <div class="row ">
                     
                     <div class="col-lg-6 col-md-6 col-sm-6 site-title two-column">
-                        <h3 class="title-text">HI THERE<img class="svg-icons" src="./icons/wave.svg"/>, I'm  </h3>
-                        <h2 class="title-text">kolade</h1>
-                        <h4 class="title-text text-uppercase">SOFTWARE DEVELOPER<img class="svg-icons" src="./icons/boy.svg"/><img class="svg-icons" src="./icons/computer.png"/></h4>
+                        <h3 class="title-text intro">HI THERE<img class="svg-icons" src="./icons/wave.svg"/>, I'm  </h3>
+                        <h2 class="title-text name">k<span class="spin">o</span>lade</h1>
+                        <h4 class="title-text text-uppercase role ">SOFTWARE DEVELOPER<img class="svg-icons" src="./icons/boy.svg"/><img class="svg-icons" src="./icons/computer.png"/></h4>
                         <p> i'm a creative software developer base in Abuja, Nigeria</p>
                         <div class="site-buttons">
                             <div class="d-flex flex-row flex-wrap">
-                                <button type="button" class="btn button secondary-button text-uppercase">Hire Me</button>
+                               <a href="/Contact"> <button type="button" class="btn button secondary-button text-uppercase">Hire Me</button></a>
                                 <button type="button" class="btn button secondary-button text-uppercase">Grab CV</button>
                             </div>
                         </div>

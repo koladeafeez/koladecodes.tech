@@ -11,12 +11,117 @@
 
 
 
+
+
+header{
+    position: sticky;
+    z-index: 20;
+}
+
+
+
+.logo-div {
+    width: 7rem;
+    height: 0;
+    margin:0;
+    padding: 0;
+    align-items: flex-start;
+    align-self: flex-start;
+    padding-right: 28rem;
+}
+
+.logo {
+    width: 7rem;
+    height: 4rem;
+ 
+}
+
 html,body{
-    background-color: black;
+    background-color: #3C153B;
     max-height: 15rem;
     
 }
 
+.intro {
+    color: #fff;
+}
+
+.name {
+    color: #EFA9AE;
+}
+
+.role {
+    color: #DB4C40;
+}
+
+p{
+    color: rgb(167, 156, 156);
+}
+p{
+    margin-bottom: 0;
+}
+
+
+.d-flex .btn{
+    background-color: #DB4C40;
+}
+.two-column .site-buttons .d-flex .btn:hover{
+    color: #EFA9AE !important;
+}
+
+li a {
+    color: #f1064c !important;
+}
+
+.brand-area .first-row .col-lg-3 > .single-brand{
+background-color:#89BD9E !important;
+}
+
+.title-h1:first-child{
+font-size: .6rem;
+}
+
+.svg-icons:first-child{
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+}
+
+.info h2 {
+    color: #8B1E3F !important;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 1.5rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-top-right-radius: 2rem;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3C153B;
+  }
+
+
+
+.header{
+    background-color: #FDF0D5;
+}
+
+.change-bg{
+    background-color: #FDF0D5'
+}
 
 .burger-full {
     display: -ms-flexbox;
@@ -139,9 +244,6 @@ font-family: "Fondamento", "Pacifico";
     padding-left: 6rem;
 }
 
-p {
-color: #4E4B4B;
-}
 
 .site-banner .site-title h3{
     font-size: 1.3rem;
@@ -149,12 +251,10 @@ color: #4E4B4B;
     margin: 0rem;
     margin-top: 5rem;
     line-height: 3rem;
-    color: #fff;
 
 }
 .site-banner .site-title h2{
     font-size: 3rem;
-    color:#E33281;
     margin: 0;
     padding:0;
     line-height: 3rem;
@@ -162,21 +262,19 @@ color: #4E4B4B;
 
  .site-banner .site-title h4{
     font-size: 1.5rem;
-    color: #E7C0E9;
+    line-height: .5rem;
 }
 
 .button.secondary-button {
-   background-color: #E7C0E9;
    height: 3rem;
    width: 8rem;
    margin-right:1rem;
    border-radius: 2rem;
-   border-color: #E7C0E9;
    overflow: hidden;
    padding: 1rem 0;
 }
 .line{
-background-color: #fff;
+
 width: 3rem;
 }
 .line:first-child{
@@ -189,7 +287,6 @@ width: 3rem;
    }
 
 .nav-links li a {
-    color: #fff
 }
 
 /* End Banner Area */ 
@@ -468,7 +565,7 @@ footer.footer-area .social a > i{
 
 
   .linkedin:hover,.twitter:hover{
-    color: blue !important;
+    color: rgb(92, 92, 175) !important;
 
 }
 .github:hover,.medium:hover{
@@ -505,6 +602,11 @@ footer.footer-area .social a > i{
 
 
 @media screen and (max-width: 991px) {
+    .logo {
+        width: 6rem;
+        height: 4rem;
+     
+    }
     .img-fluid {
         margin-top: 8rem;
         padding-top: 0;
@@ -535,6 +637,11 @@ footer.footer-area .social a > i{
 }
 
 @media screen and (max-width: 831px) {
+    .logo {
+        width: 6.4rem;
+        height: 4rem;
+     
+    }
     .img-fluid {
         margin-top: 0rem;
         padding-top: 0rem;
@@ -615,6 +722,11 @@ footer.footer-area .social a > i{
 
 }
 @media screen and (max-width: 669px) { 
+    .logo {
+        width: 5rem;
+        height: 4rem;
+     
+    }
     /* .main-navigation {
         position: fixed;
         right: 0;
@@ -667,6 +779,11 @@ footer.footer-area .social a > i{
 }
 
 @media screen and (max-width: 448px) {
+    .logo {
+        width: 4rem;
+        height: 4rem;
+     
+    }
     .site-banner {
         margin-left: 0;
     }

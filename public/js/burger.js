@@ -7,15 +7,17 @@ let menuOpen = false;
 
 
 
-activelink.forEach(nav => {
-  nav.addEventListener('click', ()=> {
-    setTimeout(()=>{
-      let d  = nav.getAttribute('href');
-      window.location.href = d;
-    },700)
+// activelink.forEach(nav => {
+//   nav.addEventListener('click', ()=> {
+//     setTimeout(()=>{
+//     //   let d  = nav.getAttribute('href');
+//     //   window.location.href = d;
+//     // },700)
    
-  })
-})
+//   location.reload();
+
+//   },1000)
+// })
 
 
 
@@ -50,5 +52,7 @@ if(document.querySelector('.stop')){
 	document.getElementById("menu").classList.toggle("change");
   document.getElementById("nav").classList.toggle("change");
 	console.log(document.getElementById("menu-bg"));
-	document.getElementById("menu-bg").classList.toggle("change-bg");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+  document.querySelector('.burger-nav').classList.toggle('on-nav')
+
 };

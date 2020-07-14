@@ -32,7 +32,7 @@ router.route('/')
 
 router.route('/Projects')
   .get((req, res) => {
-  res.render('project')
+  res.render('projects')
 })
 
 router.route('/Contact')
@@ -46,7 +46,7 @@ router.route('/Tools')
 })
 
 app.get('/About', (req, res) => {
-  res.render('about', { title: 'About' });
+  res.render('about');
 });
 
 

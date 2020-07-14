@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Daily Tuition</title>
+
+<%- include("./partials/head.ejs") %>
+<style>
+   body,html{
+        margin-top: .5rem;
+    }
+    p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+    nav {
+    height: 1vh;
+    /* background: #5b78c7; */
+}
+.img-fluid {
+    max-width: 100%;
+    height: 20rem;
+    padding-top: 3rem;
+}
+
+header nav {
+    position: relative;
+    z-index: 9;
+    text-align: right;
+    width: 100%;
+    padding: 0px 100px;
+    top: 0px;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+    img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    height: 200px;
+}
+
+    main {
+padding: 0 4rem;
+    }
+
+    .burger-full {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    margin-right: -35px;
+    margin-left: -1100px;
+}
+
+    .logo img {
+    padding-top: 0rem;
+    width: 7rem;
+}
+    .container {
+        margin-top: 0rem;
+    }
+
+    .empty {
+        display: none;
+    }
+    .logo img {
+    width: 5rem;
+}
+
+.hamburger {
+top: 0;
+}
+
+.nav-links{
+    padding-top: 0 !important;
+}
+
+.pb-5, .py-5 {
+    padding-bottom: 2rem!important;
+}
+
+.title-h1 {
+    color:#fff;
+    font-size: 1.1rem;
+    margin-bottom: 0rem;
+
+
+}
+h4{
+    font-size: .7rem;
+    color:#E7C0E9;
+}
+    @media screen and (max-width: 991px){
+    
+
+        .nav-links li a {
+        font-size: 1rem;
+        margin-right: 0;
+        }
+
+        .project-area{
+            margin-top: 0rem;
+        } 
+        .pb-5, .py-5 {
+    padding-bottom: 3rem!important;
+}
+
+
+
+    }
+    @media screen and (max-width: 989px){
+        .pb-5, .py-5 {
+    padding-bottom: 1rem!important;
+}
+.title-h1 {
+    font: bold 1rem/ .2rem var(--roboto);
+}
+
+nav {
+    height: 1vh;
+    /* background: #5b78c7; */
+}
+.img-fluid {
+    margin-top: 1rem;
+    padding-top: 0;
+}
+
+    }
+
+    @media screen and (max-width: 763px){
+        .open {
+            margin-top: 13px !important;
+        }
+
+        .text-uppercase {
+    text-transform: uppercase!important;
+    font-size: 1.2rem
+}
+
+.pb-5 {
+    margin-top:4rem;
+}
+    }
+    @media screen and (max-width: 750px){
+ 
+.title-h1 {
+    font: bold 1rem/ .2rem var(--roboto);
+}
+main{
+    padding: 0;
+}
+    }
+
+ @media screen and (max-width: 540px){ 
+        .img-fluid {
+    margin-top: 1rem;
+    padding: 0;
+} 
+.col-md-6 {
+    padding-left: 0px;
+   }
+   .img-fluid {
+    max-width: 100%;
+    height: 20rem;
+    padding-top: 3rem;
+}
+.text-uppercase {
+    text-transform: uppercase!important;
+    font-size: .8rem;
+}
+
+
+    }
+
+    @media screen and (max-width: 394px){
+        .title-h1 {
+    font-size: .8rem;
+    } 
+  
+    
+.pb-5, .py-5 {
+    padding-bottom: 0rem!important;
+}
+.project-area {
+    margin-top: .4rem;
+}
+.img-fluid {
+    max-width: 100%;
+    height: 20rem;
+    padding-top: 1.5rem;
+}    }
+
+
+
+/* html, body {margin: 0; height: 100%; overflow: hidden} */
+
+.static{
+  position: fixed;
+}
+
+.footer-lost {
+  display: none;
+}
+
+
+
+
+
+
+  @media screen and (max-width:670px) {
+    .cover-max{
+    visibility: hidden;
+    }
+
+    .appear-link{
+      position: absolute;
+      top: -200px;
+    }
+
+    .site-banner .site-title h3 {
+     margin-top: 3rem;
+  }
+   
+
+.menu-btn-small {
+  z-index: 2;
+ }
+
+ .menu-btn-small::before,
+ .menu-btn-small::after {
+   z-index: 2;
+   width: 6vw;
+ }
+
+ .menu-btn {
+ position: relative;
+  top: 0;
+  display: flex;
+  cursor: pointer;
+  padding-right: .5rem;
+  z-index: 99;
+}
+ .menu-small-btn {
+  
+  
+  transition: all .5s ease-in-out;
+  float: right;
+}
+
+  }
+
+
+/* .nav li a{
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+} */
+.nav li a:hover{
+  font-weight: bold;
+}
+.nav li{
+  list-style: none;
+  padding: 16px 0;
+}
+/* .nav{
+  text-align: right;
+  padding-left: 7rem;
+} */
+
+
+ @media screen and (max-width:670px) {
+
+  }
+
+
+  body,html{
+        margin-top: .5rem;
+    }
+    p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+    nav {
+    height: 1vh;
+    /* background: #5b78c7; */
+}
+.img-fluid {
+    max-width: 100%;
+    height: 20rem;
+    padding-top: 3rem;
+}
+
+header nav {
+    position: relative;
+    z-index: 9;
+    text-align: right;
+    width: 100%;
+    padding: 0px 100px;
+    top: 0px;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+    img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    height: 200px;
+}
+
+    main {
+padding: 0 4rem;
+    }
+
+    .burger-full {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    margin-right: -35px;
+    margin-left: -1100px;
+}
+
+    .logo img {
+    padding-top: 0rem;
+    width: 7rem;
+}
+    .container {
+        margin-top: 0rem;
+    }
+
+    .empty {
+        display: none;
+    }
+    .logo img {
+    width: 5rem;
+}
+
+.hamburger {
+top: 0;
+}
+
+.nav-links{
+    padding-top: 0 !important;
+}
+
+.pb-5, .py-5 {
+    padding-bottom: 2rem!important;
+}
+
+.title-h1 {
+    color:#fff;
+    font-size: 1.1rem;
+    margin-bottom: 0rem;
+
+
+}
+h4{
+    font-size: .7rem;
+    color:#E7C0E9;
+}
+    @media screen and (max-width: 991px){
+    
+
+        .nav-links li a {
+        font-size: 1rem;
+        margin-right: 0;
+        }
+
+        .project-area{
+            margin-top: 0rem;
+        } 
+        .pb-5, .py-5 {
+    padding-bottom: 3rem!important;
+}
+
+
+
+    }
+    @media screen and (max-width: 989px){
+        .pb-5, .py-5 {
+    padding-bottom: 1rem!important;
+}
+.title-h1 {
+    font: bold 1rem/ .2rem var(--roboto);
+}
+
+nav {
+    height: 1vh;
+    /* background: #5b78c7; */
+}
+.img-fluid {
+    margin-top: 1rem;
+    padding-top: 0;
+}
+
+    }
+
+    @media screen and (max-width: 763px){
+        .open {
+            margin-top: 13px !important;
+        }
+
+        .text-uppercase {
+    text-transform: uppercase!important;
+    font-size: 1.2rem
+}
+
+.pb-5 {
+    margin-top:4rem;
+}
+    }
+    @media screen and (max-width: 750px){
+ 
+.title-h1 {
+    font: bold 1rem/ .2rem var(--roboto);
+}
+main{
+    padding: 0;
+}
+    }
+
+ @media screen and (max-width: 540px){ 
+        .img-fluid {
+    margin-top: 1rem;
+    padding: 0;
+} 
+.col-md-6 {
+    padding-left: 0px;
+   }
+   .img-fluid {
+    max-width: 100%;
+    height: 20rem;
+    padding-top: 3rem;
+}
+.text-uppercase {
+    text-transform: uppercase!important;
+    font-size: .8rem;
+}
+
+
+    }
+
+    @media screen and (max-width: 394px){
+        .title-h1 {
+    font-size: .8rem;
+    } 
+  
+    
+.pb-5, .py-5 {
+    padding-bottom: 0rem!important;
+}
+.project-area {
+    margin-top: .4rem;
+}
+.img-fluid {
+    max-width: 100%;
+    height: 20rem;
+    padding-top: 1.5rem;
+}    }
+
+
+
+/* html, body {margin: 0; height: 100%; overflow: hidden} */
+
+.static{
+  position: fixed;
+}
+
+.footer-lost {
+  display: none;
+}
+
+
+
+
+
+
+  @media screen and (max-width:670px) {
+    .cover-max{
+    visibility: hidden;
+    }
+
+    .appear-link{
+      position: absolute;
+      top: -200px;
+    }
+
+    .site-banner .site-title h3 {
+     margin-top: 3rem;
+  }
+   
+
+.menu-btn-small {
+  z-index: 2;
+ }
+
+ .menu-btn-small::before,
+ .menu-btn-small::after {
+   z-index: 2;
+   width: 6vw;
+ }
+
+ .menu-btn {
+ position: relative;
+  top: 0;
+  display: flex;
+  cursor: pointer;
+  padding-right: .5rem;
+  z-index: 99;
+}
+ .menu-small-btn {
+  
+  
+  transition: all .5s ease-in-out;
+  float: right;
+}
+
+  }
+
+
+/* .nav li a{
+  color: #fff;
+  text-decoration: none;
+  margin-right: 2.4rem;
+} */
+.nav li a:hover{
+  font-weight: bold;
+}
+.nav li{
+  list-style: none;
+  padding: 16px 0;
+}
+/* .nav{
+  text-align: right;
+  padding-left: 7rem;
+} */
+
+
+/* @media screen and (max-width:1135px) {
+    .nav {
+    text-align: right;
+    padding-left: 5rem;
+}
+} */
+
+@media screen and (max-width:1080px) {
+    .nav li a{
+    font-size: medium;
+    margin-right: 1.5rem;
+    padding-left: auto;
+}
+}
+
+ @media screen and (max-width:670px) {
+
+  #bar1{
+    transform: translateY(-4px);
+  }
+  #bar3{
+    transform: translateY(4px);
+  }
+  .nav li a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav li a:hover{
+    font-weight: bold;
+  }
+  .nav li{
+    list-style: none;
+    padding: 16px 0;
+  }
+
+  
+
+ }
+ @media screen and (max-width:670px) {
+
+.nav li a {
+  margin-right: 6rem;
+  font-size: xx-large;
+}
+
+.on-nav {
+  margin-top: 6rem;
+  display: block;
+  z-index: 20;
+  position: absolute;
+  top: 1rem;
+  padding-left: 4rem;
+  font-size: 2.5rem;
+}
+
+.on-nav h1 {
+   color: black;
+   position: absolute;
+   font-size: 3rem;
+   /* bottom: 3rem; */
+   
+}
+
+.on-nav ul{
+  padding-top: 9rem;
+}
+
+.on-nav ul li {
+  list-style: none;
+}
+
+.on-nav ul li a .fab {
+  width: 6rem;
+  height: 6rem;
+  font-size: 5rem;
+}
+
+#menu{
+  width: 40px;
+  height: 40px;
+  margin: 2rem 0 1.4rem auto;
+  cursor: pointer;
+  padding-top: 7px;
+  padding-left: 7px;
+  border: 2px solid #3C153B;
+}
+.bar{
+  height: .4rem;
+  width: 80%;
+  background-color: #f1064c;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+#bar1{
+  transform: translateY(-4px);
+}
+#bar3{
+  transform: translateY(4px);
+}
+.nav li a{
+  color: #fff;
+  text-decoration: none;
+}
+.nav li a:hover{
+  font-weight: bold;
+}
+.nav li{
+  list-style: none;
+  padding: 16px 0;
+}
+.nav{
+  padding: 0;
+  margin: 0 20px;
+  transition: 0.3s ease;
+  display: none;
+}
+.menu-bg, #menu-bar{
+  top: 0;
+  right: 1rem;
+  position: absolute;
+}
+ .menu-bg{
+  background: #EFA9AE;
+  z-index: 1;
+  border-top-left-radius: 50%; 
+  border-bottom-left-radius: 50%;
+  transition: 1s ease;
+ 
+
+}
+#menu-bar{
+  z-index: 2;	
+}
+ .change-bg{
+   margin-left: 400px;
+   width: 1200px;
+   height: 100%;
+   transform: translate(15px, 0px); 
+   overflow: hidden;
+ }
+ 
+.change .bar{
+  background-color: #f1064c;
+}
+.change #bar1{
+  transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+  transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+  opacity: 0;
+}
+.change{
+  display: block;
+}
+}
+
+
+
+
+
+
+
+@media screen and (max-width:490px) {
+
+
+.nav li a {
+margin-right: 2rem;
+font-size: larger;
+}
+
+.on-nav {
+margin-top: 2rem;
+display: block;
+z-index: 20;
+position: absolute;
+top: .5rem;
+padding-left: 2rem;
+font-size: 1.5rem;
+}
+
+.on-nav h1 {
+ color: black;
+ position: absolute;
+ /* bottom: 3rem; */
+ 
+}
+
+.on-nav ul{
+padding-top: 6rem;
+}
+
+.on-nav ul li {
+list-style: none;
+}
+
+.on-nav ul li a .fab {
+width: 4rem;
+height: 4rem;
+font-size: 3rem;
+}
+}
+
+@media screen and (max-width:350px) {
+
+
+.nav li a {
+ margin-right: 1rem;
+ font-size: 1.5rem;
+}}
+
+.nav li{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+</style>
+<body>
+    <!-- - include("./partials/nav.ejs") -->
+  
+      <header>
+        <div class="row">
+            <div class="col-lg-6">
+    
+            </div>
+      <div id="menu-bar">
+          <div id="menu" onclick="onClickMenu()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+          </div>
+          <!-- <nav class=""> -->
+          <ul class="nav" id="nav">
+              <li><a class="appear" href="/">Home</a></li>
+              <li><a  class="appear"  href="/About">About</a></li>
+              <li><a  class="appear"  href="/Tools">Tools</a></li>
+              <li><a  class="appear"  href="/Projects">Projects</a></li>
+              <li><a  class="appear"  href="/Contact">Contact</a></li>
+          </ul>
+      </div>
+        </div>
+        <div class="burger-nav ">
+          <h1>Resume</h1>
+        <ul>
+         
+         <li> <a href="#"><i class="fab fa-github github"></i></a></li>
+     <li> <a href="#"><i class="fab fa-linkedin linkedin"></i></a></li>
+      <li><a href="#"><i class="fab fa-medium medium"></i></a></li>
+     <li> <a href="#"><i class="fab fa-twitter twitter"></i></a></li>
+      </ul>
+        </div>
+      <div class="menu-bg" id="menu-bg"></div>
+    <!-- </nav> -->
+    </header>
+   
+   <!--  ======================= Project Area =============================  -->
+   <div class="cover animate" data-barba="wrapper">
+    <main data-barba="container" data-barba-namespace="project" >
+       <section class="project-area burger">
+        <div class="container">
+            <div class="project-title pb-5">
+                <h1 class="text-uppercase title-h1">--- FEATURED PROJECTS<img class="svg-icons" src="./icons/fire.svg"/></h1>
+                <h1 class="text-uppercase title-h1">stuff i've work on <img class="svg-icons" src="./icons/folder.svg"></h1>
+            </div>
+
+            <!-- <div class="button-group"> -->
+                <!-- <button type="button" class="active" id="btn1" data-filter="*">All</button>
+                <button type="button" data-filter=".popular">Popular</button>
+                <button type="button" data-filter=".latest">Latest</button>
+                <button type="button" data-filter=".following">Following</button>
+                <button type="button" data-filter=".upcoming">Upcoming</button>
+            </div> -->
+
+            <div class="row grid">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 element-item latest">
+                    <div class="our-project">
+                          <div class="img">
+                              <a>
+                                  <img src="./img/est-compressor.png" alt="covid19 Estimator">
+                              </a>
+                              </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Covid19 Impact Estimator</h4>
+                            <span class="text-secondary"></span>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 element-item popular">
+                    <div class="our-project">
+                        <div class="img">
+                            <a>
+                                <img src="./img/dash-compressor.png" alt="covid19 Estimator">
+                            </a>
+                            </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">AWESOME DASHBOARD</h4>
+                            <span class="text-secondary"></span>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 element-item popular">
+                    <div class="our-project">
+                        <div class="img">
+                            <a>
+                                <img src="./img/stayfits-compressor.png" alt="STAYFIT">
+                            </a>
+                            </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">STAYFIT</h4>
+                            <span class="text-secondary"></span>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 element-item upcoming">
+                    <div class="our-project">
+                        <div class="img">
+                            <a>
+                                <img src="./img/movvvi-compressor.png" alt="covid19 Estimator">
+                            </a>
+                            </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">MUVIEFLIX</h4>
+                            <span class="text-secondary"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr/>       
+            
+            </div>
+        </div>
+    </section>
+</main>
+</div>
+<footer class="footer-area">
+    <div class="social text-center">
+        <a href="#"><i class="fab fa-github github"></i></a>
+        <a href="#"><i class="fab fa-linkedin linkedin"></i></a>
+        <a href="#"><i class="fab fa-medium medium"></i></a>
+        <a href="#"><i class="fab fa-twitter twitter"></i></a>
+    </div>
+    <div class="copyrights text-center">
+        <p class="para">
+            Made with Love 
+        </p>
+    </div>
+</footer>
+</main>
+
+    <!--  ======================= End Project Area =============================  -->
+    <%- include("./partials/footer.ejs") %>
