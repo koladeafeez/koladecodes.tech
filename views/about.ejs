@@ -2,9 +2,9 @@
 <html lang="en">
  <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Daily Tuition</title>
+        <title>About: kolade afeez</title>
 
 <%- include("./partials/head.ejs") %>
 <style>
@@ -37,18 +37,18 @@ main {
     padding: 0;
 }
 #nav{
-    padding-left: 9rem;
+    /* padding-left: 9rem; */
 }
 @media screen and (max-width: 1200px) {
     #nav{
-    padding-left: 7rem;
+    /* padding-left: 7rem; */
     font-size: .9rem;
 }
 }
 
 @media screen and (max-width: 1080px) {
     #nav{
-    padding-left: 5rem;
+    /* padding-left: 5rem; */
     font-size: .8rem;
 }
 .nav li a {
@@ -60,7 +60,7 @@ main {
 }
 @media screen and (max-width: 832px) {
     #nav{
-    padding-left: 4rem;
+    /* padding-left: 4rem; */
     font-size: .8rem;
 }
 .nav li a {
@@ -72,15 +72,20 @@ main {
 }
 
 @media screen and (max-width: 763px) {
-    #nav{
-    padding-left: 2rem;
-    font-size: .6rem;
-}
-.nav li a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 1rem;
-}
+
+
+
+   
+    .nav li a{
+      font-size: medium;
+      /* padding-right: 1rem !important; */
+      padding-left: 0;
+      padding-right: .5rem;
+      margin-left: 0;
+      margin-right: 0;
+
+    }
+
 
 }
 
@@ -96,8 +101,7 @@ main {
 @media screen and (max-width:670px) {
 
 .nav li a {
-  margin-right: 6rem;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .on-nav {
@@ -223,10 +227,10 @@ main {
 @media screen and (max-width:490px) {
 
 
-.nav li a {
+/* .nav li a {
 margin-right: 2rem;
 font-size: larger;
-}
+} */
 
 .on-nav {
 margin-top: 2rem;
@@ -259,20 +263,21 @@ height: 4rem;
 font-size: 3rem;
 }
 }
-
+/* 
 @media screen and (max-width:350px) {
 
 
 .nav li a {
  margin-right: 1rem;
  font-size: larger;
-}}
+}} */
 </style>
 <body>
 <header>
+  <header class="container-fluid">
     <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6">
-
+        <div class="col-lg-6 col-md-6 col-sm-6 logo-div">
+             <a href="/"> <img class="logo" src="./img/svg-logo.svg" alt="logo"></a>
         </div>
   <div id="menu-bar">
       <div id="menu" onclick="onClickMenu()">
@@ -291,13 +296,13 @@ font-size: 3rem;
   </div>
     </div>
     <div class="burger-nav ">
-        <h1>Resume</h1>
+        <h1><a href="./img/KOLADE AFEEZ _Full.pdf" download>Resume</a></h1>
       <ul>
        
-       <li> <a href="#"><i class="fab fa-github github"></i></a></li>
-   <li> <a href="#"><i class="fab fa-linkedin linkedin"></i></a></li>
-    <li><a href="#"><i class="fab fa-medium medium"></i></a></li>
-   <li> <a href="#"><i class="fab fa-twitter twitter"></i></a></li>
+       <li> <a href="https://github.com/koladeafeez" target="_blank"><i class="fab fa-github github"></i></a></li>
+   <li> <a href="https://linkedin.com/in/kolade-afeez-2233a2175" target="_blank"><i class="fab fa-linkedin linkedin"></i></a></li>
+    <li><a href="https://medium.com" target="_blank"><i class="fab fa-medium medium"></i></a></li>
+   <li> <a href="https://twitter.com/coded_phykson" target="_blank"><i class="fab fa-twitter twitter"></i></a></li>
     </ul>
       </div>
   <div class="menu-bg" id="menu-bg"></div>
@@ -321,17 +326,14 @@ font-size: 3rem;
                 </h2>
                 <div class="paragraph py-4 w-75">
                     <p class="para">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum iure obcaecati vel
-                        possimus officia maiores perferendis ut! Quos, perspiciatis.
+                      I am a creative web developer dedicated to building and optimizing the performance of user centric, high impact web
+                      applications. Leverage technical, analytical and problem solving skills to create dynamic, high speed websites and applications.
                     </p>
                     <p class="para">
-                        It is a long established fact that a reader will be distracted by the readable content
-                        of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                        more-or-less normal distribution of letters, as opposed to using 'Content here, content
-                        here
+                        For fun i love playing video games and i also love attending conference and festivals.
                     </p>
                 </div>
-                <button type="button" class="btn button primary-button text-uppercase">Download cv</button>
+                <a href="./img/KOLADE AFEEZ _Full.pdf" download><button type="button" class="btn button primary-button text-uppercase">Download cv</button></a>
             </div>
         </div>
     </div>
@@ -345,7 +347,7 @@ font-size: 3rem;
     </div>
     <div class="copyrights text-center">
         <p class="para">
-            Made with Love 
+            Made with joy
         </p>
     </div>
 </footer>

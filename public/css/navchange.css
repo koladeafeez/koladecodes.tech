@@ -101,7 +101,7 @@
     }
 
     .site-banner .site-title h3 {
-     margin-top: 3rem;
+     margin-top: 1rem;
   }
    
 .menu-btn-small {
@@ -140,6 +140,7 @@
   .nav li a {
     margin-right: 6rem;
     font-size: xx-large;
+    margin-top: 4rem;
 }
 
   .on-nav {
@@ -179,13 +180,14 @@
     height: 40px;
     margin: 2rem 0 1.4rem auto;
     cursor: pointer;
-    padding-top: 7px;
-    padding-left: 7px;
+    padding-top: .6rem !important;
+    padding-left: 0 !important;
     border: 2px solid #3C153B;
+    background-color: #3C153B;
 }
   .bar{
     height: .4rem;
-    width: 80%;
+    width: 100%;
     background-color: #f1064c;
     display: block;
     border-radius: 5px;
@@ -232,7 +234,7 @@
     z-index: 2;	
   }
    .change-bg{
-     margin-left: 400px;
+     margin-left: 700px;
      width: 1200px;
      height: 100%;
      transform: translate(15px, 0px); 
@@ -243,7 +245,7 @@
     background-color: #f1064c;
   }
   .change #bar1{
-    transform: translateY(4px) rotateZ(-45deg);
+    transform: translateY(5px) rotateZ(-45deg) !important;
   }
   .change #bar3{
     transform: translateY(-6px) rotate(45deg);
@@ -263,7 +265,9 @@
 
 
  @media screen and (max-width:490px) {
-
+  .row .logo-div {
+    padding-left: 1rem !important;
+  }
 
  .nav li a {
   margin-right: 2rem;
@@ -304,6 +308,9 @@
 
  @media screen and (max-width:350px) {
 
+  .row .logo-div {
+    padding-left: 2rem !important;
+  }
 
   .nav li a {
    margin-right: 1rem;

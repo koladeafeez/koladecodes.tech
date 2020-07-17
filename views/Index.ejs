@@ -2,12 +2,12 @@
 <html lang="en">
  <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Daily Tuition</title>
+        <title>Kolade Afeez</title>
 
 <%- include("./partials/head.ejs") %>
-
+<link rel="stylesheet" href="./css/loader.css">
 <style>
 
 header .row {
@@ -23,10 +23,7 @@ body,html{
     height: 100%;
 }
 
-/* html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-} */
+
 
 .two-column p {
     margin-top: 0;
@@ -76,18 +73,10 @@ body,html{
 </style>
  </head>
 <body>
-
-
-
-    <div class="loading-container">
-        <div class="loading-screen">
-        </div>
-      </div>
-  
       <header class="container-fluid">
           <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-6 logo-div">
-                    <img class="logo" src="./img/svg-logo.svg" alt="logo">
+                   <a href="/"> <img class="logo" src="./img/svg-logo.svg" alt="logo"></a>
               </div>
         <div id="menu-bar">
             <div id="menu" onclick="onClickMenu()">
@@ -108,10 +97,10 @@ body,html{
         </div>
           </div>
           <div class="burger-nav ">
-            <h1>Resume</h1>
+            <h1><a href="./img/KOLADE AFEEZ _Full.pdf"download>Resume</a></h1>
           <ul>
            
-           <li> <a href="#"><i class="fab fa-github github"></i></a></li>
+           <li> <a href="https://github.com/koladeafeez" target="_blank"><i class="fab fa-github github"></i></a></li>
        <li> <a href="#"><i class="fab fa-linkedin linkedin"></i></a></li>
         <li><a href="#"><i class="fab fa-medium medium"></i></a></li>
        <li> <a href="#"><i class="fab fa-twitter twitter"></i></a></li>
@@ -131,12 +120,12 @@ body,html{
                     <div class="col-lg-6 col-md-6 col-sm-6 site-title two-column">
                         <h3 class="title-text intro">HI THERE<img class="svg-icons" src="./icons/wave.svg"/>, I'm  </h3>
                         <h2 class="title-text name">k<span class="spin">o</span>lade</h1>
-                        <h4 class="title-text text-uppercase role ">SOFTWARE DEVELOPER<img class="svg-icons" src="./icons/boy.svg"/><img class="svg-icons" src="./icons/computer.png"/></h4>
+                        <h4 class="title-text text-uppercase role ">FullStack Engineer<img class="svg-icons" src="./icons/boy.svg"/><img class="svg-icons" src="./icons/computer.png"/></h4>
                         <p> i'm a creative software developer base in Abuja, Nigeria</p>
                         <div class="site-buttons">
                             <div class="d-flex flex-row flex-wrap">
                                <a href="/Contact"> <button type="button" class="btn button secondary-button text-uppercase">Hire Me</button></a>
-                                <button type="button" class="btn button secondary-button text-uppercase">Grab CV</button>
+                               <a href="./img/KOLADE AFEEZ _Full.pdf" download> <button type="button" class="btn button secondary-button text-uppercase">Grab CV</button></a>
                             </div>
                         </div>
                     </div>
@@ -151,10 +140,10 @@ body,html{
 
   <footer class="footer-area">
     <div class="social text-center">
-        <a href="#"><i class="fab fa-github github"></i></a>
-        <a href="#"><i class="fab fa-linkedin linkedin"></i></a>
-        <a href="#"><i class="fab fa-medium medium"></i></a>
-        <a href="#"><i class="fab fa-twitter twitter"></i></a>
+        <a href="https://github.com/koladeafeez" target="_blank"><i class="fab fa-github github"></i></a>
+        <a href="https://linkedin.com/in/kolade-afeez-2233a2175" target="_blank"><i class="fab fa-linkedin linkedin"></i></a>
+        <a href="https://medium.com" target="_blank"><i class="fab fa-medium medium"></i></a>
+        <a href="https://twitter.com/coded_phykson" target="_blank"><i class="fab fa-twitter twitter"></i></a>
     </div>
     <div class="copyrights text-center">
         <p class="para">
@@ -163,6 +152,7 @@ body,html{
     </div>
 </footer>
 </main>
+<script src="./js/loader.js"></script>
   <%- include("./partials/footer.ejs") %>
 
 </main>

@@ -4,10 +4,41 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Daily Tuition</title>
+        <title>Projects: Kolade Afeez</title>
 
 <%- include("./partials/head.ejs") %>
 <style>
+
+.icon-out-span a{
+background-color: yellow;
+display: flex;
+}
+.fa-eye:before {
+  background-color:#3C153B ;
+  border-radius: 2rem;
+  border-color: #DB084A;
+}
+
+.fa-github:before{
+  background-color:#3C153B ;
+  border-radius: 1rem;
+  border-color: #DB084A;
+}
+
+
+.icon-out-span a > i{
+  font-size: larger;
+  position: absolute;
+  font-size: 2rem;
+  top: 13rem;
+  left: 2rem;
+  color: #DB084A;
+}
+
+.icon-out-span .last{
+  left: 7rem;
+}
+
    body,html{
         margin-top: .5rem;
     }
@@ -44,9 +75,9 @@ header nav {
     height: 200px;
 }
 
-    main {
-padding: 0 4rem;
-    }
+  main{
+    padding: 0;
+  }
 
     .burger-full {
     display: -ms-flexbox;
@@ -93,469 +124,250 @@ top: 0;
 }
 h4{
     font-size: .7rem;
-    color:#E7C0E9;
+    color:#EFA9AE;
 }
-    @media screen and (max-width: 991px){
-    
-
-        .nav-links li a {
-        font-size: 1rem;
-        margin-right: 0;
-        }
-
-        .project-area{
-            margin-top: 0rem;
-        } 
-        .pb-5, .py-5 {
-    padding-bottom: 3rem!important;
-}
-
-
-
-    }
-    @media screen and (max-width: 989px){
-        .pb-5, .py-5 {
-    padding-bottom: 1rem!important;
-}
-.title-h1 {
-    font: bold 1rem/ .2rem var(--roboto);
-}
-
-nav {
-    height: 1vh;
-    /* background: #5b78c7; */
-}
-.img-fluid {
-    margin-top: 1rem;
-    padding-top: 0;
-}
-
-    }
-
-    @media screen and (max-width: 763px){
-        .open {
-            margin-top: 13px !important;
-        }
-
-        .text-uppercase {
-    text-transform: uppercase!important;
-    font-size: 1.2rem
-}
-
-.pb-5 {
-    margin-top:4rem;
-}
-    }
-    @media screen and (max-width: 750px){
- 
-.title-h1 {
-    font: bold 1rem/ .2rem var(--roboto);
-}
-main{
-    padding: 0;
-}
-    }
-
- @media screen and (max-width: 540px){ 
-        .img-fluid {
-    margin-top: 1rem;
-    padding: 0;
-} 
-.col-md-6 {
-    padding-left: 0px;
-   }
-   .img-fluid {
-    max-width: 100%;
-    height: 20rem;
-    padding-top: 3rem;
-}
-.text-uppercase {
-    text-transform: uppercase!important;
-    font-size: .8rem;
-}
-
-
-    }
-
-    @media screen and (max-width: 394px){
-        .title-h1 {
-    font-size: .8rem;
-    } 
-  
-    
-.pb-5, .py-5 {
-    padding-bottom: 0rem!important;
-}
-.project-area {
-    margin-top: .4rem;
-}
-.img-fluid {
-    max-width: 100%;
-    height: 20rem;
-    padding-top: 1.5rem;
-}    }
-
-
-
-/* html, body {margin: 0; height: 100%; overflow: hidden} */
-
-.static{
-  position: fixed;
-}
-
-.footer-lost {
-  display: none;
-}
-
-
-
-
-
-
-  @media screen and (max-width:670px) {
-    .cover-max{
-    visibility: hidden;
-    }
-
-    .appear-link{
-      position: absolute;
-      top: -200px;
-    }
-
-    .site-banner .site-title h3 {
-     margin-top: 3rem;
-  }
-   
-
-.menu-btn-small {
-  z-index: 2;
- }
-
- .menu-btn-small::before,
- .menu-btn-small::after {
-   z-index: 2;
-   width: 6vw;
- }
-
- .menu-btn {
- position: relative;
-  top: 0;
-  display: flex;
-  cursor: pointer;
-  padding-right: .5rem;
-  z-index: 99;
-}
- .menu-small-btn {
-  
-  
-  transition: all .5s ease-in-out;
-  float: right;
-}
-
-  }
-
-
-/* .nav li a{
-  color: #fff;
-  text-decoration: none;
-  margin-right: 1rem;
-} */
-.nav li a:hover{
-  font-weight: bold;
-}
-.nav li{
-  list-style: none;
-  padding: 16px 0;
-}
-/* .nav{
-  text-align: right;
-  padding-left: 7rem;
-} */
-
-
- @media screen and (max-width:670px) {
-
-  }
-
-
-  body,html{
-        margin-top: .5rem;
-    }
-    p {
-    margin-top: 0;
-    margin-bottom: 0rem;
-}
-    nav {
-    height: 1vh;
-    /* background: #5b78c7; */
-}
-.img-fluid {
-    max-width: 100%;
-    height: 20rem;
-    padding-top: 3rem;
-}
-
-header nav {
-    position: relative;
-    z-index: 9;
-    text-align: right;
-    width: 100%;
-    padding: 0px 100px;
-    top: 0px;
-    transform: translateY(0);
-    opacity: 1;
-}
-
-
-    img {
-    vertical-align: middle;
-    border-style: none;
-    width: 100%;
-    height: 200px;
-}
-
-    main {
-padding: 0 4rem;
-    }
-
-    .burger-full {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: nowrap;
-    margin-right: -35px;
-    margin-left: -1100px;
-}
-
-    .logo img {
-    padding-top: 0rem;
-    width: 7rem;
-}
-    .container {
-        margin-top: 0rem;
-    }
-
-    .empty {
-        display: none;
-    }
-    .logo img {
-    width: 5rem;
-}
-
-.hamburger {
-top: 0;
-}
-
-.nav-links{
-    padding-top: 0 !important;
-}
-
-.pb-5, .py-5 {
-    padding-bottom: 2rem!important;
-}
-
-.title-h1 {
-    color:#fff;
-    font-size: 1.1rem;
-    margin-bottom: 0rem;
-
-
-}
-h4{
-    font-size: .7rem;
-    color:#E7C0E9;
-}
-    @media screen and (max-width: 991px){
-    
-
-        .nav-links li a {
-        font-size: 1rem;
-        margin-right: 0;
-        }
-
-        .project-area{
-            margin-top: 0rem;
-        } 
-        .pb-5, .py-5 {
-    padding-bottom: 3rem!important;
-}
-
-
-
-    }
-    @media screen and (max-width: 989px){
-        .pb-5, .py-5 {
-    padding-bottom: 1rem!important;
-}
-.title-h1 {
-    font: bold 1rem/ .2rem var(--roboto);
-}
-
-nav {
-    height: 1vh;
-    /* background: #5b78c7; */
-}
-.img-fluid {
-    margin-top: 1rem;
-    padding-top: 0;
-}
-
-    }
-
-    @media screen and (max-width: 763px){
-        .open {
-            margin-top: 13px !important;
-        }
-
-        .text-uppercase {
-    text-transform: uppercase!important;
-    font-size: 1.2rem
-}
-
-.pb-5 {
-    margin-top:4rem;
-}
-    }
-    @media screen and (max-width: 750px){
- 
-.title-h1 {
-    font: bold 1rem/ .2rem var(--roboto);
-}
-main{
-    padding: 0;
-}
-    }
-
- @media screen and (max-width: 540px){ 
-        .img-fluid {
-    margin-top: 1rem;
-    padding: 0;
-} 
-.col-md-6 {
-    padding-left: 0px;
-   }
-   .img-fluid {
-    max-width: 100%;
-    height: 20rem;
-    padding-top: 3rem;
-}
-.text-uppercase {
-    text-transform: uppercase!important;
-    font-size: .8rem;
-}
-
-
-    }
-
-    @media screen and (max-width: 394px){
-        .title-h1 {
-    font-size: .8rem;
-    } 
-  
-    
-.pb-5, .py-5 {
-    padding-bottom: 0rem!important;
-}
-.project-area {
-    margin-top: .4rem;
-}
-.img-fluid {
-    max-width: 100%;
-    height: 20rem;
-    padding-top: 1.5rem;
-}    }
-
-
-
-/* html, body {margin: 0; height: 100%; overflow: hidden} */
-
-.static{
-  position: fixed;
-}
-
-.footer-lost {
-  display: none;
-}
-
-
-
-
-
-
-  @media screen and (max-width:670px) {
-    .cover-max{
-    visibility: hidden;
-    }
-
-    .appear-link{
-      position: absolute;
-      top: -200px;
-    }
-
-    .site-banner .site-title h3 {
-     margin-top: 3rem;
-  }
-   
-
-.menu-btn-small {
-  z-index: 2;
- }
-
- .menu-btn-small::before,
- .menu-btn-small::after {
-   z-index: 2;
-   width: 6vw;
- }
-
- .menu-btn {
- position: relative;
-  top: 0;
-  display: flex;
-  cursor: pointer;
-  padding-right: .5rem;
-  z-index: 99;
-}
- .menu-small-btn {
-  
-  
-  transition: all .5s ease-in-out;
-  float: right;
-}
-
-  }
-
-
-/* .nav li a{
-  color: #fff;
-  text-decoration: none;
-  margin-right: 2.4rem;
-} */
-.nav li a:hover{
-  font-weight: bold;
-}
-.nav li{
-  list-style: none;
-  padding: 16px 0;
-}
-/* .nav{
-  text-align: right;
-  padding-left: 7rem;
-} */
-
-
-/* @media screen and (max-width:1135px) {
-    .nav {
-    text-align: right;
-    padding-left: 5rem;
-}
-} */
-
 @media screen and (max-width:1080px) {
     .nav li a{
     font-size: medium;
     margin-right: 1.5rem;
-    padding-left: auto;
+    padding-left: 0;
 }
+}
+
+ 
+    @media screen and (max-width: 991px){
+    
+
+        .nav-links li a {
+        font-size: 1rem;
+        margin-right: 0;
+        }
+
+        .project-area{
+            margin-top: 0rem;
+        } 
+        .pb-5, .py-5 {
+    padding-bottom: 3rem!important;
+}
+
+
+
+    }
+    @media screen and (max-width: 989px){
+        .pb-5, .py-5 {
+    padding-bottom: 1rem!important;
+}
+.title-h1 {
+    font: bold 1rem/ .2rem var(--roboto);
+}
+
+nav {
+    height: 1vh;
+    /* background: #5b78c7; */
+}
+.img-fluid {
+    margin-top: 1rem;
+    padding-top: 0;
+}
+
+    }
+
+
+
+
+    @media screen and (max-width: 989px){
+        .pb-5, .py-5 {
+    padding-bottom: 1rem!important;
+}
+.title-h1 {
+    font: bold 1rem/ .2rem var(--roboto);
+}
+
+nav {
+    height: 1vh;
+    /* background: #5b78c7; */
+}
+.img-fluid {
+    margin-top: 1rem;
+    padding-top: 0;
+}
+
+    }
+    
+    @media screen and (max-width: 800px){
+ 
+        .nav li a {
+    font-size: medium;
+    margin-right: 1rem;
+    padding-left: 0;
+}
+    }
+
+
+
+
+    @media screen and (max-width: 763px){
+        .open {
+            margin-top: 13px !important;
+        }
+
+        .text-uppercase {
+    text-transform: uppercase!important;
+    font-size: 1.2rem
+}
+
+.pb-5 {
+    margin-top:4rem;
+}
+    }
+
+
+
+
+
+    @media screen and (max-width: 763px){
+        .open {
+            margin-top: 13px !important;
+        }
+
+        .text-uppercase {
+    text-transform: uppercase!important;
+    font-size: 1.2rem
+}
+
+.pb-5 {
+    margin-top:4rem;
+}
+    }
+
+    
+    @media screen and (max-width: 750px){
+ 
+ .title-h1 {
+     font: bold 1rem/ .2rem var(--roboto);
+ }
+ main{
+     padding: 0;
+ }
+     }
+ 
+    @media screen and (max-width: 750px){
+ 
+.title-h1 {
+    font: bold 1rem/ .2rem var(--roboto);
+}
+main{
+    padding: 0;
+}
+    }
+    @media screen and (max-width: 800px){
+ 
+ .nav li a {
+font-size: medium;
+margin-right: .67rem;
+padding-left: 0;
+padding-top: 0;
+}
+}
+
+    @media screen and (max-width:670px) {
+    .cover-max{
+    visibility: hidden;
+    }
+
+    .appear-link{
+      position: absolute;
+      top: -200px;
+    }
+
+    .site-banner .site-title h3 {
+     margin-top: 3rem;
+  }
+   
+
+.menu-btn-small {
+  z-index: 2;
+ }
+
+ .menu-btn-small::before,
+ .menu-btn-small::after {
+   z-index: 2;
+   width: 6vw;
+ }
+
+ .menu-btn {
+ position: relative;
+  top: 0;
+  display: flex;
+  cursor: pointer;
+  padding-right: .5rem;
+  z-index: 99;
+}
+ .menu-small-btn {
+  
+  
+  transition: all .5s ease-in-out;
+  float: right;
+}
+
+  }
+
+  @media screen and (max-width:670px) {
+
+}
+@media screen and (max-width:670px) {
+    .cover-max{
+    visibility: hidden;
+    }
+
+    .appear-link{
+      position: absolute;
+      top: -200px;
+    }
+
+    .site-banner .site-title h3 {
+     margin-top: 3rem;
+  }
+   
+
+.menu-btn-small {
+  z-index: 2;
+ }
+
+ .menu-btn-small::before,
+ .menu-btn-small::after {
+   z-index: 2;
+   width: 6vw;
+ }
+
+ .menu-btn {
+ position: relative;
+  top: 0;
+  display: flex;
+  cursor: pointer;
+  padding-right: .5rem;
+  z-index: 99;
+}
+ .menu-small-btn {
+  
+  
+  transition: all .5s ease-in-out;
+  float: right;
+}
+
+  }
+
+.nav li a:hover{
+  font-weight: bold;
+}
+.nav li{
+  list-style: none;
+  padding: 16px 0;
+}
+
+.nav{
+  text-align: right;
+  padding-right: 0rem;
 }
 
  @media screen and (max-width:670px) {
@@ -581,8 +393,13 @@ main{
   
 
  }
- @media screen and (max-width:670px) {
 
+
+ @media screen and (max-width:670px) {
+    .project-title {
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+}
 .nav li a {
   margin-right: 6rem;
   font-size: xx-large;
@@ -702,14 +519,64 @@ main{
 }
 }
 
+@media screen and (max-width: 540px){ 
+        .img-fluid {
+    margin-top: 1rem;
+    padding: 0;
+} 
+.col-md-6 {
+    padding-left: 0px;
+   }
+   .img-fluid {
+    max-width: 100%;
+    height: 20rem;
+    padding-top: 3rem;
+}
+.text-uppercase {
+    text-transform: uppercase!important;
+    font-size: .8rem;
+}
+
+
+    }
 
 
 
 
+ @media screen and (max-width: 540px){ 
+   .col-md-6{
+     padding-right: 0;
+   }
+        .img-fluid {
+    margin-top: 1rem;
+    padding: 0;
+} 
+.col-md-6 {
+    padding-left: 0px;
+   }
+   .img-fluid {
+    max-width: 100%;
+    height: 20rem;
+    padding-top: 3rem;
+}
+.text-uppercase {
+    text-transform: uppercase!important;
+    font-size: .8rem;
+}
 
 
-@media screen and (max-width:490px) {
+    }
 
+    @media screen and (max-width:490px) {
+    .logo-div {
+    margin: 0;
+    margin-top: .5rem;
+    margin-left: 0rem;
+}
+.project-title {
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+}
 
 .nav li a {
 margin-right: 2rem;
@@ -747,6 +614,41 @@ height: 4rem;
 font-size: 3rem;
 }
 }
+@media screen and (max-width: 394px){
+        .title-h1 {
+    font-size: .8rem;
+    } 
+  
+    
+.pb-5, .py-5 {
+    padding-bottom: 0rem!important;
+}
+.project-area {
+    margin-top: .4rem;
+}
+.img-fluid {
+    max-width: 100%;
+    height: 20rem;
+    padding-top: 1.5rem;
+}    }
+
+@media screen and (max-width: 394px){
+        .title-h1 {
+    font-size: .8rem;
+    } 
+  
+    
+.pb-5, .py-5 {
+    padding-bottom: 0rem!important;
+}
+.project-area {
+    margin-top: .4rem;
+}
+.img-fluid {
+    max-width: 100%;
+    height: 20rem;
+    padding-top: 1.5rem;
+}    }
 
 @media screen and (max-width:350px) {
 
@@ -756,19 +658,145 @@ font-size: 3rem;
  font-size: 1.5rem;
 }}
 
-.nav li{
-    padding-top: 0;
-    margin-top: 0;
+
+
+
+/* html, body {margin: 0; height: 100%; overflow: hidden} */
+
+.static{
+  position: fixed;
 }
 
+.footer-lost {
+  display: none;
+}
+
+
+
+
+
+
+  
+.nav li a:hover{
+  font-weight: bold;
+}
+.nav li{
+  list-style: none;
+  padding: 16px 0;
+}
+
+
+ 
+
+
+
+ 
+
+
+/* html, body {margin: 0; height: 100%; overflow: hidden} */
+
+.static{
+  position: fixed;
+}
+
+.footer-lost {
+  display: none;
+}
+
+
+
+
+body,html{
+      margin-top: .5rem;
+  }
+  p {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+  nav {
+  height: 1vh;
+  /* background: #5b78c7; */
+}
+.img-fluid {
+  max-width: 100%;
+  height: 20rem;
+  padding-top: 3rem;
+}
+
+header nav {
+  position: relative;
+  z-index: 9;
+  text-align: right;
+  width: 100%;
+  padding: 0px 100px;
+  top: 0px;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+  img {
+  vertical-align: middle;
+  border-style: none;
+  width: 100%;
+  height: 16rem;
+}
+
+  .burger-full {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: nowrap;
+  margin-right: -35px;
+  margin-left: -1100px;
+}
+
+  .logo img {
+  padding-top: 0rem;
+  width: 7rem;
+}
+  .container {
+      margin-top: 0rem;
+  }
+
+  .empty {
+      display: none;
+  }
+  .logo img {
+  width: 5rem;
+}
+
+.hamburger {
+top: 0;
+}
+
+.nav-links{
+  padding-top: 0 !important;
+}
+
+.pb-5, .py-5 {
+  padding-bottom: 2rem!important;
+}
+
+.title-h1 {
+  color:#fff;
+  font-size: 1.3rem;
+  margin-bottom: 0rem;
+
+
+}
+.col-md-6{
+  padding-left: 0;
+}
+ 
 </style>
 <body>
     <!-- - include("./partials/nav.ejs") -->
   
-      <header>
+    <header class="container-fluid">
         <div class="row">
-            <div class="col-lg-6">
-    
+            <div class="col-lg-6 col-md-6 col-sm-6 logo-div">
+                  <a href="/"><img class="logo" src="./img/svg-logo.svg" alt="logo"></a>
             </div>
       <div id="menu-bar">
           <div id="menu" onclick="onClickMenu()">
@@ -787,13 +815,13 @@ font-size: 3rem;
       </div>
         </div>
         <div class="burger-nav ">
-          <h1>Resume</h1>
+          <h1><a href="./img/KOLADE AFEEZ _Full.pdf" download>Resume</a></h1>
         <ul>
          
-         <li> <a href="#"><i class="fab fa-github github"></i></a></li>
-     <li> <a href="#"><i class="fab fa-linkedin linkedin"></i></a></li>
-      <li><a href="#"><i class="fab fa-medium medium"></i></a></li>
-     <li> <a href="#"><i class="fab fa-twitter twitter"></i></a></li>
+         <li> <a href="https://github.com/koladeafeez" target="_blank"><i class="fab fa-github github"></i></a></li>
+     <li> <a href="https://linkedin.com/in/kolade-afeez-2233a2175" target="_blank"><i class="fab fa-linkedin linkedin"></i></a></li>
+      <li><a href="https://medium.com" target="_blank"><i class="fab fa-medium medium"></i></a></li>
+     <li> <a href="https://twitter.com/coded_phykson" target="_blank"><i class="fab fa-twitter twitter"></i></a></li>
       </ul>
         </div>
       <div class="menu-bg" id="menu-bg"></div>
@@ -809,18 +837,54 @@ font-size: 3rem;
                 <h1 class="text-uppercase title-h1">--- FEATURED PROJECTS<img class="svg-icons" src="./icons/fire.svg"/></h1>
                 <h1 class="text-uppercase title-h1">stuff i've work on <img class="svg-icons" src="./icons/folder.svg"></h1>
             </div>
-
-            <!-- <div class="button-group"> -->
-                <!-- <button type="button" class="active" id="btn1" data-filter="*">All</button>
-                <button type="button" data-filter=".popular">Popular</button>
-                <button type="button" data-filter=".latest">Latest</button>
-                <button type="button" data-filter=".following">Following</button>
-                <button type="button" data-filter=".upcoming">Upcoming</button>
-            </div> -->
+        
+         
 
             <div class="row grid">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 element-item upcoming">
+                    <div class="our-project">
+                      <span class="icon-out-span">
+                      <a href="https://github.com/koladeafeez/MIDAS-KITCHEN"> <i class="fab fa-github" title="View github Repo"></i></a>
+                      <a href="https://koladeafeez.github.io/MIDAS-KITCHEN/"> <i class="fa fa-eye last" title="Preview site"></i></a>
+                      </span>
+                        <div class="img">
+                            <a>
+                                <img src="./img/midas-compressor.svg" alt="Midas">
+                            </a>
+                            </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">MIDAS</h4>
+                            <span class="text-secondary"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr/>     
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 element-item upcoming">
+                    <div class="our-project">
+                      <span class="icon-out-span">
+                        <a href="https://github.com/koladeafeez/MusicHive"> <i class="fab fa-github" title="View github Repo"></i></a>
+                        <a href="https://koladeafeez.github.io/MusicHive/"> <i class="fa fa-eye last" title="Preview site"></i></a>
+                        </span>
+                        <div class="img">
+                            <a>
+                                <img src="./img/musicHive-compressor.svg" alt="MusicHive">
+                            </a>
+                            </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">MusicHive</h4>
+                            <span class="text-secondary"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr/>     
                 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 element-item latest">
                     <div class="our-project">
+                      <span class="icon-out-span">
+                        <a href="https://github.com/koladeafeez/Covid19-Estimator"> <i class="fab fa-github" title="View github Repo"></i></a>
+                        <a href="https://coviid19-estimator.netlify.app/"> <i class="fa fa-eye last" title="Preview site"></i></a>
+                        </span>
                           <div class="img">
                               <a>
                                   <img src="./img/est-compressor.png" alt="covid19 Estimator">
@@ -833,8 +897,52 @@ font-size: 3rem;
                     </div>
                 </div>
                 <hr/>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 element-item upcoming">
+                    <div class="our-project">
+                      <span class="icon-out-span">
+                        <a href="https://github.com/koladeafeez/TravelsPage"> <i class="fab fa-github" title="View github Repo"></i></a>
+                        <a href="https://koladeafeez.github.io/TravelsPage/"> <i class="fa fa-eye last" title="Preview site"></i></a>
+                        </span>
+                        <div class="img">
+                            <a>
+                                <img src="./img/travel-compressor.svg" alt="Travel">
+                            </a>
+                            </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Hotels</h4>
+                            <span class="text-secondary"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr/>     
+                
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 element-item upcoming">
+                    <div class="our-project">
+                      <span class="icon-out-span">
+                        <a href="https://github.com/koladeafeez/AnimatedLogin"> <i class="fab fa-github" title="View github Repo"></i></a>
+                        <a href="https://koladeafeez.github.io/AnimatedLogin/"> <i class="fa fa-eye last" title="Preview site"></i></a>
+                        </span>
+                        <div class="img">
+                            <a>
+                                <img src="./img/animatedlogin-compressor.svg" alt="Animated login">
+                            </a>
+                            </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Animated LogIn</h4>
+                            <span class="text-secondary"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr/>     
+               
                 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 element-item popular">
                     <div class="our-project">
+                      <span class="icon-out-span">
+                        <a href="https://github.com/koladeafeez/aewsome-dashboard"> <i class="fab fa-github" title="View github Repo"></i></a>
+                        <a href="https://koladeafeez.github.io/aewsome-dashboard/"> <i class="fa fa-eye last" title="Preview site"></i></a>
+                        </span>
                         <div class="img">
                             <a>
                                 <img src="./img/dash-compressor.png" alt="covid19 Estimator">
@@ -849,6 +957,10 @@ font-size: 3rem;
                 <hr/>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 element-item popular">
                     <div class="our-project">
+                      <span class="icon-out-span">
+                        <a href=""> <i class="fab fa-github" title="View github Repo"></i></a>
+                        <a href=""> <i class="fa fa-eye last" title="Preview site"></i></a>
+                        </span>
                         <div class="img">
                             <a>
                                 <img src="./img/stayfits-compressor.png" alt="STAYFIT">
@@ -863,9 +975,13 @@ font-size: 3rem;
                 <hr/>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 element-item upcoming">
                     <div class="our-project">
+                      <span class="icon-out-span">
+                        <a href="https://github.com/koladeafeez/MovieFlix"> <i class="fab fa-github" title="View github Repo"></i></a>
+                        <a href="https://muvvieflix.netlify.app/"> <i class="fa fa-eye last" title="Preview site"></i></a>
+                        </span>
                         <div class="img">
                             <a>
-                                <img src="./img/movvvi-compressor.png" alt="covid19 Estimator">
+                                <img src="./img/movvvi-compressor.png" alt="MovieFlix">
                             </a>
                             </div>
                         <div class="title py-4">
@@ -876,7 +992,7 @@ font-size: 3rem;
                 </div>
                 
                 <hr/>       
-            
+                
             </div>
         </div>
     </section>
@@ -884,14 +1000,14 @@ font-size: 3rem;
 </div>
 <footer class="footer-area">
     <div class="social text-center">
-        <a href="#"><i class="fab fa-github github"></i></a>
-        <a href="#"><i class="fab fa-linkedin linkedin"></i></a>
-        <a href="#"><i class="fab fa-medium medium"></i></a>
-        <a href="#"><i class="fab fa-twitter twitter"></i></a>
+        <a href="https://github.com/koladeafeez" target="_blank"><i class="fab fa-github github"></i></a>
+        <a href="https://linkedin.com/in/kolade-afeez-2233a2175" target="_blank"><i class="fab fa-linkedin linkedin"></i></a>
+        <a href="https://medium.com" target="_blank"><i class="fab fa-medium medium"></i></a>
+        <a href="https://twitter.com/coded_phykson" target="_blank"><i class="fab fa-twitter twitter"></i></a>
     </div>
     <div class="copyrights text-center">
         <p class="para">
-            Made with Love 
+            Made with Laughter
         </p>
     </div>
 </footer>

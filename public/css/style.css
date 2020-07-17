@@ -14,7 +14,6 @@
 
 
 header{
-    position: sticky;
     z-index: 20;
 }
 
@@ -24,10 +23,11 @@ header{
     width: 7rem;
     height: 0;
     margin:0;
-    padding: 0;
+    margin-top: 1rem;
+    margin-left: 3rem;
     align-items: flex-start;
     align-self: flex-start;
-    padding-right: 28rem;
+    /* padding-right: 28rem; */
 }
 
 .logo {
@@ -39,6 +39,7 @@ header{
 html,body{
     background-color: #3C153B;
     max-height: 15rem;
+    max-width: 100%;
     
 }
 
@@ -78,12 +79,12 @@ background-color:#89BD9E !important;
 }
 
 .title-h1:first-child{
-font-size: .6rem;
+font-size: .7rem;
 }
 
-.svg-icons:first-child{
-    width: 1rem;
-    height: 1rem;
+.project-title .svg-icons:first-child{
+    width: 1.1rem;
+    height: 1.1rem;
     display: inline-block;
 }
 
@@ -105,7 +106,7 @@ font-size: .6rem;
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #3C153B;
   }
   
   /* Handle on hover */
@@ -213,15 +214,6 @@ font-family: "Fondamento", "Pacifico";
     font-weight: 500;
 }
 
-/* .site-main .site-banner .site-title h3::after{
-    content: " ";
-    height: 2px;
-    width: 18vw;
-    background: black;
-    display: inline-block;
-    margin-left: 5%;
-    transform: translateY(-10px);
-} */
 
 .site-main .site-banner .site-title h1{
     font-size: 3rem;
@@ -236,9 +228,6 @@ font-family: "Fondamento", "Pacifico";
     width: 90rem;
 }
 
-/* .site-banner {
-    margin-left: 1rem;
-} */
 
 .two-column{
     padding-left: 6rem;
@@ -272,6 +261,7 @@ font-family: "Fondamento", "Pacifico";
    border-radius: 2rem;
    overflow: hidden;
    padding: 1rem 0;
+   color: #fff;
 }
 .line{
 
@@ -286,8 +276,7 @@ width: 3rem;
     align-self: center;
    }
 
-.nav-links li a {
-}
+
 
 /* End Banner Area */ 
 
@@ -603,29 +592,15 @@ footer.footer-area .social a > i{
 
 @media screen and (max-width: 991px) {
     .logo {
-        width: 6rem;
+        width: 5rem;
         height: 4rem;
      
     }
     .img-fluid {
-        margin-top: 8rem;
+        margin-top: 3rem;
         padding-top: 0;
     }
-    /* .nav-links {
-        padding-top: 0;
-        padding-right: 0;
-        margin-right:0;
-    }
-    .logo img {
-       padding-top: .9rem;
-        width: 5rem;
-        padding-left: 1.5rem;
-    }
-    .nav-links li a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.5rem;
-    } */
+
     .button {
         padding: .8rem 2.2rem;
         margin-right: 1rem;
@@ -638,7 +613,7 @@ footer.footer-area .social a > i{
 
 @media screen and (max-width: 831px) {
     .logo {
-        width: 6.4rem;
+        width: 4.5rem;
         height: 4rem;
      
     }
@@ -722,21 +697,20 @@ footer.footer-area .social a > i{
 
 }
 @media screen and (max-width: 669px) { 
+
+    .logo-div {
+        margin:0;
+        margin-top: 1rem;
+        margin-left: 0rem;
+        align-items: flex-start;
+        align-self: flex-start;
+    }
+    
     .logo {
         width: 5rem;
         height: 4rem;
      
     }
-    /* .main-navigation {
-        position: fixed;
-        right: 0;
-    } */
-    /*
-    .copyrights{
-        position: fixed;
-        bottom: 0;
-        left: 40vw;
-    } */
 
     .col-md-6{
         padding-left: 50px;
@@ -780,10 +754,15 @@ footer.footer-area .social a > i{
 
 @media screen and (max-width: 448px) {
     .logo {
-        width: 4rem;
+        width: 5rem;
         height: 4rem;
      
     }
+
+    .logo-div {
+        margin-top: 2.1rem;
+    }
+
     .site-banner {
         margin-left: 0;
     }
@@ -823,9 +802,6 @@ footer.footer-area .social a > i{
         font-weight: 9rem;
     }
 
-    .logo{
-  position: fixed;
-    }
 
     .logo img {
         padding-top: 1rem;
